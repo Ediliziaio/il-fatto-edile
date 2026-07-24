@@ -36,3 +36,16 @@ for (const route of ssr.ROUTES) {
 }
 
 console.log(`Prerender completato: ${count} pagine statiche in dist/`);
+
+// Sitemap generata dalle stesse fonti dati delle rotte: sempre completa e in sync
+const today = new Date().toISOString().slice(0, 10);
+const urls = ssr
+  .sitemapEntries(today)
+  .map(
+    (e) =>
+      `  <url><loc>${e.loc}</loc><lastmod>${e.lastmod}</lastmod><changefreq>${e.changefreq}</changefreq><priority>${e.priority}</priority></url>`,
+  )
+  .join('\n');
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
+fs.writeFileSync(path.join(root, 'dist', 'sitemap.xml'), sitemap);
+console.log(`Sitemap generata: ${ssr.sitemapEntries(today).length} URL in dist/sitemap.xml`);

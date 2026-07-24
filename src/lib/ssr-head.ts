@@ -191,3 +191,41 @@ export const ROUTES: string[] = [
   '/ricerca',
   ...Object.keys(LEGAL_META),
 ];
+
+export interface SitemapEntry {
+  loc: string;
+  lastmod: string;
+  changefreq: string;
+  priority: string;
+}
+
+/**
+ * Voci sitemap generate dalle stesse fonti dati delle rotte prerenderizzate:
+ * resta sempre in sync con i contenuti reali (nessuna pagina indicizzabile fuori sitemap).
+ * Esclude /ricerca e le pagine legali (nessun valore di ranking).
+ */
+export function sitemapEntries(today: string): SitemapEntry[] {
+  const abs = (p: string) => `${SITE.domain}${p}`;
+  const entries: SitemapEntry[] = [
+    { loc: SITE.domain + '/', lastmod: today, changefreq: 'daily', priority: '1.0' },
+  ];
+  for (const f of ['top5', 'top10', 'news'] as ArticleFormat[]) {
+    entries.push({ loc: abs(FORMAT_META[f].path), lastmod: today, changefreq: 'daily', priority: '0.9' });
+  }
+  entries.push({ loc: abs('/archivio'), lastmod: today, changefreq: 'weekly', priority: '0.6' });
+  for (const c of CATEGORIES) {
+    entries.push({ loc: abs(`/categoria/${c.slug}`), lastmod: today, changefreq: 'weekly', priority: '0.7' });
+  }
+  for (const a of ARTICLES) {
+    entries.push({
+      loc: abs(`/articolo/${a.slug}`),
+      lastmod: a.updatedAt ?? a.publishedAt,
+      changefreq: 'weekly',
+      priority: '0.8',
+    });
+  }
+  for (const t of TAGS) {
+    entries.push({ loc: abs(`/tag/${t.slug}`), lastmod: today, changefreq: 'monthly', priority: '0.4' });
+  }
+  return entries;
+}
