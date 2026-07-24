@@ -33,7 +33,7 @@ export default function SiteFooter() {
       {/* colonne */}
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-4">
         <div>
-          <img src={logo} alt="Il Fatto Edile" className="h-10 w-auto bg-white p-1" />
+          <img src={logo} alt="Il Fatto Edile" width={160} height={40} loading="lazy" className="h-10 w-auto bg-white p-1" />
           <p className="mt-4 max-w-xs font-sans text-sm leading-relaxed text-neutral-400">
             {SITE.tagline}. News, classifiche e guide per imprese edili, tecnici e professionisti delle costruzioni.
           </p>

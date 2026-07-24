@@ -75,7 +75,11 @@ export default function ArticlePage() {
 
   const jsonLd = article ? articleJsonLd(article) : {};
   useSeo({
-    title: article ? `${article.title} | ${SITE.name}` : `Articolo non trovato | ${SITE.name}`,
+    title: article
+      ? article.title.length > 55
+        ? article.title
+        : `${article.title} | ${SITE.name}`
+      : `Articolo non trovato | ${SITE.name}`,
     description: article ? article.excerpt : 'L\u2019articolo richiesto non è disponibile.',
     canonical: article ? `${SITE.domain}/articolo/${article.slug}` : SITE.domain,
     type: 'article',
@@ -140,14 +144,18 @@ export default function ArticlePage() {
           </header>
 
           <figure className="mt-6">
-            <img
-              src={`/images/covers/${article.slug}.jpg`}
-              alt={article.coverAlt}
-              width={1200}
-              height={675}
-              itemProp="image"
-              className="aspect-[16/9] w-full object-cover"
-            />
+            <picture>
+              <source srcSet={`/images/covers/${article.slug}.webp`} type="image/webp" />
+              <img
+                src={`/images/covers/${article.slug}.jpg`}
+                alt={article.coverAlt}
+                width={1200}
+                height={675}
+                fetchPriority="high"
+                itemProp="image"
+                className="aspect-[16/9] w-full object-cover"
+              />
+            </picture>
             <figcaption className="mt-1.5 font-sans text-[11px] text-neutral-500">{article.coverAlt}</figcaption>
           </figure>
 
