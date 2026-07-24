@@ -45,8 +45,13 @@ export default function Home() {
 
   return (
     <main>
+      {/* titolo editoriale della testata: unico h1 della home */}
+      <h1 className="mx-auto max-w-7xl px-4 pt-8 font-serif text-3xl font-black tracking-tight text-neutral-950 md:text-4xl">
+        Il Fatto Edile: news, bonus e guide per l'edilizia italiana
+      </h1>
+
       {/* apertura */}
-      <section aria-label="In evidenza" className="mx-auto max-w-7xl px-4 pt-8">
+      <section aria-label="In evidenza" className="mx-auto max-w-7xl px-4 pt-6">
         <div className="grid gap-8 lg:grid-cols-3">
           <div className="lg:col-span-2">
             <ArticleCard article={featured} variant="hero" />
