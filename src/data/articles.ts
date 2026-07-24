@@ -57,4 +57,7 @@ export const SITE = {
   tagline: 'Il quotidiano digitale dell\u2019edilizia italiana',
   description:
     'Il Fatto Edile: news, guide e classifiche su edilizia, bonus, normativa, mercato delle costruzioni, materiali e innovazione in cantiere. Informazione indipendente per imprese e professionisti.',
+  /** meta description home ottimizzata (<160 caratteri) per evitare il troncamento in SERP */
+  metaDescription:
+    'News, guide e classifiche sull\u2019edilizia italiana: bonus, normativa, mercato delle costruzioni, materiali e innovazione in cantiere. Aggiornato ogni giorno.',
 };

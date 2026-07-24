@@ -82,7 +82,7 @@ export function headFor(url: string): string {
   if (path === '/') {
     return renderHead({
       title: `${SITE.name} — News, bonus e guide per l'edilizia italiana`,
-      description: SITE.description,
+      description: SITE.metaDescription,
       canonical: SITE.domain + '/',
       image: `${SITE.domain}/images/logo.png`,
       jsonLd: {
@@ -105,7 +105,8 @@ export function headFor(url: string): string {
     const a = getArticle(articleMatch[1]);
     if (a) {
       return renderHead({
-        title: `${a.title} | ${SITE.name}`,
+        // titoli lunghi restano non-brandizzati per non superare troppo la soglia SERP (~60)
+        title: a.title.length > 55 ? a.title : `${a.title} | ${SITE.name}`,
         description: a.excerpt,
         canonical: `${SITE.domain}/articolo/${a.slug}`,
         type: 'article',
