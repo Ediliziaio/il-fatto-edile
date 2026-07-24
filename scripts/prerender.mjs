@@ -37,6 +37,18 @@ for (const route of ssr.ROUTES) {
 
 console.log(`Prerender completato: ${count} pagine statiche in dist/`);
 
+// 404.html statico: Vercel lo serve (status 404) per gli URL inesistenti.
+// Contenuto brandizzato dalla rotta catch-all + robots noindex.
+{
+  const notFoundHtml = await ssr.render('/__404__');
+  let html404 = template
+    .replace(/<title>[^<]*<\/title>/, '<title>Pagina non trovata | Il Fatto Edile</title>')
+    .replace(/<meta name="robots"[^>]*>/, '<meta name="robots" content="noindex, follow" />')
+    .replace('<div id="root"></div>', `<div id="root">${notFoundHtml}</div>`);
+  fs.writeFileSync(path.join(root, 'dist', '404.html'), html404);
+  console.log('404.html generato (noindex) in dist/');
+}
+
 // Sitemap generata dalle stesse fonti dati delle rotte: sempre completa e in sync
 const today = new Date().toISOString().slice(0, 10);
 const urls = ssr

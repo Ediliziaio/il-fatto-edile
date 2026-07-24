@@ -16,6 +16,7 @@ const ChiSiamoPage = lazy(() => import('@/pages/LegalPages').then((m) => ({ defa
 const ContattiPage = lazy(() => import('@/pages/LegalPages').then((m) => ({ default: m.ContattiPage })));
 const TagPage = lazy(() => import('@/pages/TagSearchPages').then((m) => ({ default: m.TagPage })));
 const SearchPage = lazy(() => import('@/pages/TagSearchPages').then((m) => ({ default: m.SearchPage })));
+const NotFound = lazy(() => import('@/pages/NotFound'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -46,7 +47,7 @@ export default function App() {
             <Route path="/cookie-policy" element={<CookiePolicyPage />} />
             <Route path="/chi-siamo" element={<ChiSiamoPage />} />
             <Route path="/contatti" element={<ContattiPage />} />
-            <Route path="*" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </div>

@@ -34,11 +34,13 @@ interface SeoInput {
   type?: 'website' | 'article';
   image?: string;
   jsonLd?: Record<string, object | null>;
+  noindex?: boolean;
 }
 
-export function useSeo({ title, description, canonical, type = 'website', image, jsonLd }: SeoInput) {
+export function useSeo({ title, description, canonical, type = 'website', image, jsonLd, noindex }: SeoInput) {
   useEffect(() => {
     document.title = title;
+    setMeta('name', 'robots', noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1');
     setMeta('name', 'description', description);
     setMeta('property', 'og:title', title);
     setMeta('property', 'og:description', description);
@@ -58,7 +60,7 @@ export function useSeo({ title, description, canonical, type = 'website', image,
     if (jsonLd) {
       for (const [id, data] of Object.entries(jsonLd)) setJsonLd(id, data);
     }
-  }, [title, description, canonical, type, image, jsonLd]);
+  }, [title, description, canonical, type, image, jsonLd, noindex]);
 }
 
 export const coverUrl = (slug: string) => `${SITE.domain}/images/covers/${slug}.jpg`;
