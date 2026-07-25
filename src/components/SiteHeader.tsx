@@ -1,8 +1,11 @@
 import { Link, NavLink } from 'react-router';
 import { CATEGORIES, SITE } from '@/data/articles';
 import { Menu, X, Mail, Search } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import logo from '@/assets/logo.png';
+
+const formatToday = () =>
+  new Date().toLocaleDateString('it-IT', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 
 const FORMAT_LINKS = [
   { to: '/top-5', label: 'Top 5' },
@@ -12,7 +15,11 @@ const FORMAT_LINKS = [
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
-  const today = new Date().toLocaleDateString('it-IT', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  // la data è prerenderizzata al momento della build: la aggiorno al giorno reale lato client
+  const [today, setToday] = useState(formatToday);
+  useEffect(() => {
+    setToday(formatToday());
+  }, []);
 
   const navCls = ({ isActive }: { isActive: boolean }) =>
     `whitespace-nowrap px-1 py-3 font-sans text-[12px] font-semibold uppercase tracking-[0.12em] transition-colors ${
@@ -24,7 +31,7 @@ export default function SiteHeader() {
       {/* strip superiore */}
       <div className="border-b border-neutral-200 bg-neutral-950 text-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1.5">
-          <p className="font-sans text-[11px] capitalize tracking-wide">{today}</p>
+          <p suppressHydrationWarning className="font-sans text-[11px] capitalize tracking-wide">{today}</p>
           <p className="hidden font-sans text-[11px] tracking-wide text-neutral-300 md:block">{SITE.tagline}</p>
           <a href="#newsletter" className="flex items-center gap-1.5 font-sans text-[11px] font-semibold uppercase tracking-wider hover:text-red-400">
             <Mail className="h-3.5 w-3.5" /> Newsletter
