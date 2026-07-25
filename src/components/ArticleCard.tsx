@@ -50,7 +50,7 @@ export default function ArticleCard({
     return (
       <article className="group relative">
         <Link to={url} className="block">
-          <CoverArt theme={a.coverTheme} alt={a.coverAlt} label={FORMAT_BADGE[a.format]} className="aspect-[16/9] w-full" />
+          <CoverArt theme={a.coverTheme} alt={a.coverAlt} label={FORMAT_BADGE[a.format]} slug={a.slug} priority className="aspect-[16/9] w-full" />
           <div className="mt-4">
             <span className="font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-red-700">
               {categoryLabel(a.category)}
@@ -72,7 +72,7 @@ export default function ArticleCard({
   return (
     <article className="group flex h-full flex-col border border-neutral-200 bg-white">
       <Link to={url} className="block">
-        <CoverArt theme={a.coverTheme} alt={a.coverAlt} label={FORMAT_BADGE[a.format]} className="aspect-[16/10] w-full" />
+        <CoverArt theme={a.coverTheme} alt={a.coverAlt} label={FORMAT_BADGE[a.format]} slug={a.slug} className="aspect-[16/10] w-full" />
       </Link>
       <div className="flex flex-1 flex-col p-4">
         <span className="font-sans text-[10px] font-bold uppercase tracking-[0.15em] text-red-700">

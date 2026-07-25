@@ -15,11 +15,17 @@ export default function CoverArt({
   alt,
   className = '',
   label,
+  slug,
+  priority = false,
 }: {
   theme: Article['coverTheme'];
   alt: string;
   className?: string;
   label?: string;
+  /** se presente, mostra la copertina reale /images/covers/{slug}.jpg|.webp */
+  slug?: string;
+  /** immagine above-the-fold (hero): caricamento eager + alta priorità */
+  priority?: boolean;
 }) {
   const { bg, Icon, pattern } = THEMES[theme];
   return (
@@ -29,10 +35,28 @@ export default function CoverArt({
       className={`relative overflow-hidden ${className}`}
       style={{ background: bg }}
     >
-      <div className="absolute inset-0" style={{ backgroundImage: pattern }} />
-      <Icon className="absolute -right-6 -bottom-8 h-40 w-40 text-white/10" strokeWidth={1} aria-hidden />
+      {slug ? (
+        // copertina reale sopra il gradiente (che resta come fallback in caricamento)
+        <picture>
+          <source srcSet={`/images/covers/${slug}.webp`} type="image/webp" />
+          <img
+            src={`/images/covers/${slug}.jpg`}
+            alt={alt}
+            width={1200}
+            height={630}
+            loading={priority ? 'eager' : 'lazy'}
+            fetchPriority={priority ? 'high' : 'auto'}
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+        </picture>
+      ) : (
+        <>
+          <div className="absolute inset-0" style={{ backgroundImage: pattern }} />
+          <Icon className="absolute -right-6 -bottom-8 h-40 w-40 text-white/10" strokeWidth={1} aria-hidden />
+        </>
+      )}
       {label && (
-        <span className="absolute left-3 top-3 bg-white/95 px-2 py-0.5 font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-neutral-900">
+        <span className="absolute left-3 top-3 z-10 bg-white/95 px-2 py-0.5 font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-neutral-900">
           {label}
         </span>
       )}
