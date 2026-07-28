@@ -17,6 +17,8 @@ export function TagPage() {
       ? `Tutti gli articoli de Il Fatto Edile sul tema ${tag.label}: guide, classifiche e notizie dal mondo dell\u2019edilizia.`
       : SITE.description,
     canonical: tag ? `${SITE.domain}/tag/${tag.slug}` : SITE.domain,
+    // tag thin (<3 articoli) o inesistente: noindex, coerente con l'HTML prerenderizzato
+    noindex: !tag || tag.articles.length < 3,
   });
 
   if (!tag) {
@@ -88,6 +90,7 @@ export function SearchPage() {
     title: q ? `Ricerca: ${q} | ${SITE.name}` : `Cerca nel sito | ${SITE.name}`,
     description: 'Cerca tra guide, classifiche e notizie de Il Fatto Edile: bonus, normativa, mercato, materiali e innovazione per l\u2019edilizia.',
     canonical: `${SITE.domain}/ricerca`,
+    noindex: true, // ricerca interna: mai in indice
   });
 
   const terms = q.toLowerCase().split(/\s+/).filter(Boolean);

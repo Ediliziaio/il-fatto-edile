@@ -4,6 +4,9 @@ import type { ArticleFormat } from '@/types/article';
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
+/** soglia minima di articoli perché una pagina tag sia indicizzabile (sotto = thin, noindex) */
+export const TAG_INDEX_MIN = 3;
+
 interface HeadInput {
   title: string;
   description: string;
@@ -11,11 +14,13 @@ interface HeadInput {
   type?: 'website' | 'article';
   image?: string;
   jsonLd?: Record<string, object | null>;
+  noindex?: boolean;
 }
 
-function renderHead({ title, description, canonical, type = 'website', image, jsonLd }: HeadInput) {
+function renderHead({ title, description, canonical, type = 'website', image, jsonLd, noindex }: HeadInput) {
   const tags: string[] = [
     `<title>${esc(title)}</title>`,
+    `<meta name="robots" content="${noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1'}" />`,
     `<meta name="description" content="${esc(description)}" />`,
     `<link rel="canonical" href="${esc(canonical)}" />`,
     `<meta property="og:title" content="${esc(title)}" />`,
@@ -136,6 +141,8 @@ export function headFor(url: string): string {
         title: `${t.label}: articoli e guide | ${SITE.name}`,
         description: `Tutti gli articoli de Il Fatto Edile sul tema ${t.label}: guide, classifiche e notizie dal mondo dell\u2019edilizia.`,
         canonical: `${SITE.domain}/tag/${t.slug}`,
+        // tag con pochi articoli = pagina thin: fuori dall'indice, ma crawlabile (follow)
+        noindex: t.articles.length < TAG_INDEX_MIN,
       });
     }
   }
@@ -163,6 +170,7 @@ export function headFor(url: string): string {
       title: `Cerca nel sito | ${SITE.name}`,
       description: 'Cerca tra guide, classifiche e notizie de Il Fatto Edile: bonus, normativa, mercato, materiali e innovazione per l\u2019edilizia.',
       canonical: `${SITE.domain}/ricerca`,
+      noindex: true, // pagina di ricerca interna: mai indicizzare (thin/duplicata)
     });
   }
 
@@ -225,8 +233,12 @@ export function sitemapEntries(today: string): SitemapEntry[] {
       priority: '0.8',
     });
   }
-  for (const t of TAGS) {
-    entries.push({ loc: abs(`/tag/${t.slug}`), lastmod: today, changefreq: 'monthly', priority: '0.4' });
+  // solo i tag "forti" (indicizzabili): gli altri sono noindex e NON vanno in sitemap
+  for (const t of TAGS.filter((t) => t.articles.length >= TAG_INDEX_MIN)) {
+    entries.push({ loc: abs(`/tag/${t.slug}`), lastmod: today, changefreq: 'monthly', priority: '0.5' });
   }
+  // pagine istituzionali (E-E-A-T / trust): utili in indice
+  entries.push({ loc: abs('/chi-siamo'), lastmod: today, changefreq: 'monthly', priority: '0.4' });
+  entries.push({ loc: abs('/contatti'), lastmod: today, changefreq: 'monthly', priority: '0.4' });
   return entries;
 }

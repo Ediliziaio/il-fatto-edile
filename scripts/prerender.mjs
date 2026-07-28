@@ -17,6 +17,8 @@ for (const route of ssr.ROUTES) {
 
   // sostituisci title/meta/og/canonical del template con quelli della rotta
   html = html.replace(/<title>[^<]*<\/title>/, '');
+  // il robots per-rotta è autorevole (index/noindex): rimuovo quello di default del template
+  html = html.replace(/\s*<meta name="robots"[^>]*>/, '');
   html = html.replace(/\s*<meta name="description"[^>]*>/, '');
   html = html.replace(/\s*<link rel="canonical"[^>]*>/, '');
   html = html.replace(/\s*<meta property="og:[^"]*"[^>]*>/g, '');
