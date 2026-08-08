@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router';
 import { Fragment } from 'react';
 import { ARTICLES, SITE, categoryLabel, getArticle, relatedArticles, slugifyTag } from '@/data/articles';
+import { authorForCategory } from '@/data/authors';
 import { articleJsonLd, coverUrl, formatDate, useSeo } from '@/lib/seo';
 import type { Block } from '@/types/article';
 import AdSlot from '@/components/AdSlot';
@@ -132,7 +133,15 @@ export default function ArticlePage() {
             <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 border-y border-neutral-200 py-3 font-sans text-xs text-neutral-600">
               <span className="flex items-center gap-1.5">
                 <User className="h-3.5 w-3.5" />
-                di <strong className="text-neutral-900">{article.author}</strong>, {article.authorRole}
+                di{' '}
+                <Link
+                  to={`/autore/${authorForCategory(article.category).slug}`}
+                  rel="author"
+                  className="font-bold text-neutral-900 underline decoration-neutral-300 underline-offset-2 hover:text-red-700"
+                >
+                  {article.author}
+                </Link>
+                , {article.authorRole}
               </span>
               <time dateTime={article.publishedAt} itemProp="datePublished">Pubblicato il {formatDate(article.publishedAt)}</time>
               {article.updatedAt && <time dateTime={article.updatedAt} itemProp="dateModified">Aggiornato il {formatDate(article.updatedAt)}</time>}
@@ -214,18 +223,31 @@ export default function ArticlePage() {
           </div>
 
           {/* box autore — E-E-A-T */}
-          <div className="mt-10 flex gap-4 border border-neutral-200 bg-neutral-50 p-6">
-            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-neutral-950 font-serif text-xl font-black text-white">
-              {article.author.split(' ').map((w) => w[0]).join('')}
-            </span>
-            <div>
-              <p className="font-sans text-xs font-bold uppercase tracking-[0.15em] text-red-700">{article.authorRole}</p>
-              <h3 className="font-serif text-lg font-bold text-neutral-950">{article.author}</h3>
-              <p className="mt-1 font-sans text-sm leading-relaxed text-neutral-600">
-                Firma de {SITE.name}, segue il comparto delle costruzioni tra normativa, mercato e innovazione di cantiere.
-              </p>
-            </div>
-          </div>
+          {(() => {
+            const au = authorForCategory(article.category);
+            return (
+              <div className="mt-10 flex gap-4 border border-neutral-200 bg-neutral-50 p-6">
+                <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-neutral-950 font-serif text-xl font-black text-white">
+                  {au.name.split(' ').map((w) => w[0]).join('')}
+                </span>
+                <div>
+                  <p className="font-sans text-xs font-bold uppercase tracking-[0.15em] text-red-700">{au.role}</p>
+                  <h3 className="font-serif text-lg font-bold text-neutral-950">
+                    <Link to={`/autore/${au.slug}`} rel="author" className="hover:text-red-700 hover:underline">
+                      {au.name}
+                    </Link>
+                  </h3>
+                  <p className="mt-1 font-sans text-sm leading-relaxed text-neutral-600">{au.bio}</p>
+                  <Link
+                    to={`/autore/${au.slug}`}
+                    className="mt-2 inline-block font-sans text-xs font-bold uppercase tracking-wider text-red-700 hover:underline"
+                  >
+                    Tutti gli articoli di {au.name.split(' ')[0]} →
+                  </Link>
+                </div>
+              </div>
+            );
+          })()}
         </article>
 
         {/* sidebar */}

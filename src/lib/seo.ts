@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import type { Article } from '@/types/article';
 import { SITE, categoryLabel } from '@/data/articles';
+import { AUTHORS, type Author } from '@/data/authors';
 
 const setMeta = (attr: 'name' | 'property', key: string, value: string) => {
   let el = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`);
@@ -65,6 +66,46 @@ export function useSeo({ title, description, canonical, type = 'website', image,
 
 export const coverUrl = (slug: string) => `${SITE.domain}/images/covers/${slug}.jpg`;
 
+/** entità autore collegata alla sua pagina /autore (evita il "Person" fantasma) */
+function authorEntity(name: string, role: string) {
+  const a = AUTHORS.find((x) => x.name === name);
+  return a
+    ? { '@type': 'Person', '@id': `${SITE.domain}/autore/${a.slug}#person`, name: a.name, jobTitle: a.role, url: `${SITE.domain}/autore/${a.slug}` }
+    : { '@type': 'Person', name, jobTitle: role };
+}
+
+/** Schema.org Person + ProfilePage per la pagina autore (E-E-A-T) */
+export function authorJsonLd(author: Author, articles: Article[]) {
+  const url = `${SITE.domain}/autore/${author.slug}`;
+  return {
+    'author-profile': {
+      '@context': 'https://schema.org',
+      '@type': 'ProfilePage',
+      mainEntity: {
+        '@type': 'Person',
+        '@id': `${url}#person`,
+        name: author.name,
+        url,
+        jobTitle: author.role,
+        description: author.bio,
+        knowsAbout: author.beat.split(/,\s*/),
+        email: author.email,
+        worksFor: { '@type': 'NewsMediaOrganization', name: SITE.name, url: SITE.domain },
+      },
+    },
+    'author-articles': {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      itemListElement: articles.map((a, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        url: `${SITE.domain}/articolo/${a.slug}`,
+        name: a.title,
+      })),
+    },
+  };
+}
+
 /** Schema.org NewsArticle + FAQPage + BreadcrumbList per la pagina articolo (SEO/AEO/GEO) */
 export function articleJsonLd(a: Article) {
   const url = `${SITE.domain}/articolo/${a.slug}`;
@@ -78,7 +119,8 @@ export function articleJsonLd(a: Article) {
     keywords: a.keywords.join(', '),
     articleSection: categoryLabel(a.category),
     inLanguage: 'it-IT',
-    author: { '@type': 'Person', name: a.author, jobTitle: a.authorRole },
+    // l'autore è un'entità reale del sito (pagina /autore dedicata): requisito E-E-A-T
+    author: authorEntity(a.author, a.authorRole),
     publisher: {
       '@type': 'Organization',
       name: SITE.name,

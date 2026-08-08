@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react';
+import { Link } from 'react-router';
 import { SITE } from '@/data/articles';
+import { AUTHORS } from '@/data/authors';
 import { useSeo } from '@/lib/seo';
 
 function LegalLayout({
@@ -278,9 +280,24 @@ export function ChiSiamoPage() {
 
       <H2>La redazione</H2>
       <P>
-        La redazione è composta da giornalisti e collaboratori con esperienza nel comparto delle costruzioni, nel
-        fisco immobiliare e nella comunicazione tecnica. Per contattare la redazione: redazione@ilfattoedile.it.
+        La redazione è composta da firme con aree di competenza stabili: ciascuna presidia un ambito specifico del
+        comparto costruzioni e risponde dei contenuti che firma. Da ogni scheda si accede alla biografia, al contatto
+        diretto e all’archivio completo degli articoli. Per la redazione centrale: redazione@ilfattoedile.it.
       </P>
+      <ul className="mt-5 grid gap-4 sm:grid-cols-2">
+        {AUTHORS.map((a) => (
+          <li key={a.slug} className="border border-neutral-200 bg-neutral-50 p-4">
+            <Link
+              to={`/autore/${a.slug}`}
+              className="font-serif text-lg font-bold text-neutral-950 hover:text-red-700 hover:underline"
+            >
+              {a.name}
+            </Link>
+            <p className="mt-0.5 font-sans text-xs font-bold uppercase tracking-[0.15em] text-red-700">{a.role}</p>
+            <p className="mt-1.5 font-sans text-sm leading-relaxed text-neutral-600">{a.beat}</p>
+          </li>
+        ))}
+      </ul>
     </LegalLayout>
   );
 }
