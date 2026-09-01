@@ -238,40 +238,41 @@ export function ChiSiamoPage() {
   useSeo({
     title: `Chi siamo | ${SITE.name}`,
     description:
-      'Il Fatto Edile è il quotidiano digitale dedicato all’edilizia italiana: la redazione, la missione editoriale e i valori della testata.',
+      'Il Fatto Edile e la pratica di cantiere: la linea editoriale, il metodo di verifica dei contenuti, la redazione e l’editore.',
     canonical: `${SITE.domain}/chi-siamo`,
   });
 
   return (
     <LegalLayout title="Chi siamo" updated="21 luglio 2026">
       <P>
-        <strong>{SITE.name}</strong> è un quotidiano digitale indipendente dedicato al mondo delle costruzioni:
-        notizie, guide, classifiche e approfondimenti per imprese edili, artigiani, tecnici, progettisti e privati che
-        costruiscono, ristrutturano e riqualificano il patrimonio edilizio italiano.
+        <strong>{SITE.name}</strong> si occupa di una cosa sola: la <strong>pratica professionale in cantiere</strong>.
+        Checklist operative, adempimenti da rispettare, controlli da fare prima e durante i lavori, errori che costano
+        tempo e denaro. Non graduatorie di prodotti, non listini, non cronaca di settore: il «come si fa», passo per
+        passo, per chi in cantiere ci lavora.
       </P>
 
       <H2>La missione editoriale</H2>
       <P>
-        L’edilizia è uno dei motori dell’economia italiana, ma chi ci lavora ogni giorno fatica a trovare
-        informazione chiara, verificabile e scritta da chi conosce davvero il cantiere. Il Fatto Edile nasce per
-        questo: tradurre norme, dati di mercato e innovazione tecnica in contenuti utili, con un taglio pratico e un
-        linguaggio diretto.
+        Chi apre un cantiere non ha bisogno di un’altra rassegna di notizie: ha bisogno di sapere cosa deve fare,
+        in che ordine e cosa rischia se lo salta. Il Fatto Edile traduce norme, obblighi e prassi in elenchi di
+        controlli verificabili, così che ogni guida si possa usare mentre si lavora, non solo leggere.
       </P>
 
       <H2>Cosa pubblichiamo</H2>
       <UL
         items={[
-          'News: le notizie essenziali su normativa, mercato, cantieri e innovazione, con i fatti spiegati subito.',
-          'Guide Top 5: selezioni ragionate sulle cinque cose da sapere su bonus, materiali, strumenti e tendenze.',
-          'Classifiche Top 10: le dieci risposte alle domande più cercate da professionisti e privati.',
-          'Approfondimenti per categoria: Normativa & Bonus, Mercato & Economia, Innovazione & Digitale, Materiali & Prodotti, Sostenibilità, Progetti & Cantieri, Sicurezza, Eventi & Fiere.',
+          'Indice delle checklist: tutti i controlli operativi delle nostre guide raccolti in un unico elenco navigabile, ambito per ambito.',
+          'Guide Top 5: cinque punti operativi per volta — adempimenti, controlli, errori da evitare, criteri di scelta.',
+          'Classifiche Top 10: dieci punti per coprire una pratica dall’inizio alla fine — permessi, verifiche, documenti.',
+          'News: cosa cambia davvero in cantiere quando cambiano le regole, tradotto in adempimenti concreti.',
         ]}
       />
 
       <H2>Il metodo</H2>
       <P>
         Ogni contenuto è verificato prima della pubblicazione, riporta data di pubblicazione e di aggiornamento, ed è
-        firmato dalla redazione. Le guide vengono riviste periodicamente per mantenerle allineate all’evoluzione
+        firmato dalla redazione. I punti operativi di ogni guida confluiscono nell’indice delle checklist, che resta
+        la porta d’ingresso principale al sito. Le guide vengono riviste periodicamente per mantenerle allineate all’evoluzione
         normativa e di mercato. Le eventuali collaborazioni commerciali e i contenuti sponsorizzati sono sempre
         contrassegnati in modo riconoscibile.
       </P>

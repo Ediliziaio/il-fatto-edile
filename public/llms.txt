@@ -1,31 +1,36 @@
 # Il Fatto Edile
 
-> Il Fatto Edile osserva il **settore delle costruzioni come sistema economico e professionale**:
-> imprese e general contractor italiani, professioni edili piu' richieste, dati di mercato (ANCE),
-> citta' e territori dove conviene investire, housing sociale e rigenerazione urbana, fiere,
-> politiche pubbliche e trend del comparto. Non guide tecniche di cantiere: chi fa il mercato,
-> quanto vale e dove sta andando.
+> Il Fatto Edile è il sito della **pratica professionale in cantiere**: checklist
+> operative, adempimenti da rispettare, controlli da fare e errori da evitare.
+> Non classifiche di prodotti, non listini prezzi, non cronaca di settore: il
+> "come si fa", passo per passo, per chi lavora nelle costruzioni.
 
-Lingua: italiano (it-IT). Editore: Domus Group S.r.l.
+Lingua: italiano (it-IT). Editore: Domus Group S.r.l., P.IVA 13132010961, Milano.
+Firma: Redazione Il Fatto Edile (i contenuti sono pubblicati a nome della testata).
+
+## Risorsa distintiva
+- [Indice delle checklist di cantiere](https://www.ilfattoedile.it/checklist):
+  159 controlli operativi ricavati da 30 guide, raggruppati in 8 ambiti. Ogni
+  voce indica cosa verificare e rimanda alla guida che la spiega per esteso.
 
 ## Sezioni principali
-- [News dall'edilizia](https://www.ilfattoedile.it/news): normativa, mercato, cantieri e innovazione, con i fatti essenziali.
-- [Guide Top 5](https://www.ilfattoedile.it/top-5): selezioni ragionate su bonus, materiali, strumenti e tendenze.
-- [Classifiche Top 10](https://www.ilfattoedile.it/top-10): risposte essenziali alle domande più cercate da imprese, tecnici e privati.
+- [Guide Top 5](https://www.ilfattoedile.it/top-5): cinque punti operativi per volta — adempimenti, controlli, errori da evitare, criteri di scelta.
+- [Classifiche Top 10](https://www.ilfattoedile.it/top-10): dieci punti per coprire una pratica dall'inizio alla fine — permessi, verifiche, documenti.
+- [News](https://www.ilfattoedile.it/news): cosa cambia davvero in cantiere quando cambiano le regole, tradotto in adempimenti concreti.
 - [Archivio completo](https://www.ilfattoedile.it/archivio): tutti gli articoli pubblicati.
 
-## Categorie editoriali
-- [Normativa & Bonus](https://www.ilfattoedile.it/categoria/normativa-bonus): superbonus, detrazioni casa, bonus edilizi, adempimenti.
-- [Mercato & Economia](https://www.ilfattoedile.it/categoria/mercato): prezzi materiali, dati ANCE, andamento del comparto costruzioni.
-- [Innovazione & Digitale](https://www.ilfattoedile.it/categoria/innovazione): BIM, cantiere 4.0, intelligenza artificiale in edilizia.
-- [Materiali & Prodotti](https://www.ilfattoedile.it/categoria/materiali): isolanti, serramenti, coperture, confronti tecnici.
-- [Sostenibilità](https://www.ilfattoedile.it/categoria/sostenibilita): direttiva case green UE, materiali sostenibili, efficientamento.
-- [Progetti & Cantieri](https://www.ilfattoedile.it/categoria/progetti): rigenerazione urbana, PNRR, edilizia scolastica.
-- [Sicurezza in Cantiere](https://www.ilfattoedile.it/categoria/sicurezza): adempimenti e prevenzione.
-- [Eventi & Fiere](https://www.ilfattoedile.it/categoria/eventi): appuntamenti del settore edile.
+## Ambiti presidiati
+- [Sicurezza in Cantiere](https://www.ilfattoedile.it/categoria/sicurezza): adempimenti, coordinamento, prevenzione.
+- [Progetti & Cantieri](https://www.ilfattoedile.it/categoria/progetti): conduzione dei lavori, rigenerazione urbana, edilizia pubblica.
+- [Normativa & Bonus](https://www.ilfattoedile.it/categoria/normativa-bonus): titoli edilizi, pratiche, detrazioni e documenti da produrre.
+- [Materiali & Prodotti](https://www.ilfattoedile.it/categoria/materiali): criteri di scelta e posa, non graduatorie di marchi.
+- [Innovazione & Digitale](https://www.ilfattoedile.it/categoria/innovazione): BIM e strumenti digitali applicati al cantiere.
+- [Sostenibilità](https://www.ilfattoedile.it/categoria/sostenibilita): interventi di efficientamento e requisiti da rispettare.
+- [Mercato & Economia](https://www.ilfattoedile.it/categoria/mercato): il contesto in cui il cantiere opera.
+- [Eventi & Fiere](https://www.ilfattoedile.it/categoria/eventi): appuntamenti tecnici del settore.
 
 ## Risorse
-- [Chi siamo](https://www.ilfattoedile.it/chi-siamo)
-- [Contatti e pubblicità](https://www.ilfattoedile.it/contatti)
+- [Chi siamo e come lavoriamo](https://www.ilfattoedile.it/chi-siamo)
+- [Contatti](https://www.ilfattoedile.it/contatti)
 - [Feed RSS](https://www.ilfattoedile.it/rss.xml)
 - [Sitemap](https://www.ilfattoedile.it/sitemap.xml)

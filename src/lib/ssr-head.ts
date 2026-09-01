@@ -1,5 +1,6 @@
 import { ARTICLES, CATEGORIES, SITE, TAGS, getArticle, getTag } from '@/data/articles';
 import { articleJsonLd, coverUrl } from '@/lib/seo';
+import { checklistJsonLd, totalChecklistPoints } from '@/lib/checklist';
 import type { ArticleFormat } from '@/types/article';
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
@@ -47,17 +48,17 @@ function renderHead({ title, description, canonical, type = 'website', image, js
 const FORMAT_META: Record<ArticleFormat, { title: string; intro: string; path: string }> = {
   top5: {
     title: 'Le guide Top 5',
-    intro: 'Selezione ragionata e sempre aggiornata: le cinque cose da sapere su bonus, materiali, strumenti e tendenze del settore delle costruzioni.',
+    intro: 'Cinque punti operativi per volta: adempimenti, controlli da fare, errori da evitare e criteri di scelta, in forma di checklist pronta all\u2019uso.',
     path: '/top-5',
   },
   top10: {
     title: 'Le classifiche Top 10',
-    intro: 'Le dieci risposte essenziali alle domande più cercate da imprese, tecnici e privati: classifiche complete, verificabili e scritte da chi conosce il cantiere.',
+    intro: 'Dieci punti per coprire una pratica dall\u2019inizio alla fine: permessi, verifiche, documenti e passaggi da non saltare in cantiere.',
     path: '/top-10',
   },
   news: {
     title: 'News dall\u2019edilizia',
-    intro: 'Le ultime notizie dal comparto costruzioni: normativa, mercato, cantieri e innovazione, con i fatti essenziali spiegati subito.',
+    intro: 'Cosa cambia davvero in cantiere quando cambiano norme e regole: gli aggiornamenti tradotti in adempimenti concreti.',
     path: '/news',
   },
 };
@@ -73,7 +74,7 @@ const LEGAL_META: Record<string, { title: string; description: string }> = {
   },
   '/chi-siamo': {
     title: 'Chi siamo',
-    description: 'Il Fatto Edile è il quotidiano digitale dedicato all\u2019edilizia italiana: la redazione, la missione editoriale e i valori della testata.',
+    description: 'Il Fatto Edile e la pratica di cantiere: la linea editoriale, il metodo di verifica dei contenuti, la redazione e l\u2019editore.',
   },
   '/contatti': {
     title: 'Contatti e pubblicità',
@@ -86,7 +87,7 @@ export function headFor(url: string): string {
 
   if (path === '/') {
     return renderHead({
-      title: `${SITE.name} — Imprese, professioni e politiche delle costruzioni`,
+      title: `${SITE.name} — Checklist e pratica di cantiere`,
       description: SITE.metaDescription,
       canonical: SITE.domain + '/',
       image: `${SITE.domain}/images/logo.png`,
@@ -157,10 +158,20 @@ export function headFor(url: string): string {
     });
   }
 
+  if (path === '/checklist') {
+    const total = totalChecklistPoints();
+    return renderHead({
+      title: `Indice delle checklist di cantiere — ${total} controlli | ${SITE.name}`,
+      description: `${total} controlli operativi raccolti dalle guide de Il Fatto Edile: adempimenti, verifiche ed errori da evitare, raggruppati per ambito di cantiere.`,
+      canonical: `${SITE.domain}/checklist`,
+      jsonLd: checklistJsonLd(),
+    });
+  }
+
   if (path === '/archivio') {
     return renderHead({
       title: `Archivio: tutti gli articoli | ${SITE.name}`,
-      description: 'L\u2019archivio completo degli articoli de Il Fatto Edile: guide, classifiche e notizie sul mondo delle costruzioni.',
+      description: 'L\u2019archivio completo delle guide de Il Fatto Edile: checklist, adempimenti, controlli e pratiche di cantiere.',
       canonical: `${SITE.domain}/archivio`,
     });
   }
@@ -184,7 +195,7 @@ export function headFor(url: string): string {
   }
 
   return renderHead({
-    title: `${SITE.name} — Imprese, professioni e politiche delle costruzioni`,
+    title: `${SITE.name} — Checklist e pratica di cantiere`,
     description: SITE.description,
     canonical: SITE.domain + path,
   });
@@ -197,6 +208,7 @@ export const ROUTES: string[] = [
   ...ARTICLES.map((a) => `/articolo/${a.slug}`),
   ...TAGS.map((t) => `/tag/${t.slug}`),
   '/archivio',
+  '/checklist',
   '/ricerca',
   ...Object.keys(LEGAL_META),
 ];
@@ -222,6 +234,8 @@ export function sitemapEntries(today: string): SitemapEntry[] {
     entries.push({ loc: abs(FORMAT_META[f].path), lastmod: today, changefreq: 'daily', priority: '0.9' });
   }
   entries.push({ loc: abs('/archivio'), lastmod: today, changefreq: 'weekly', priority: '0.6' });
+  // asset distintivo della testata: massima priorita' dopo la home
+  entries.push({ loc: abs('/checklist'), lastmod: today, changefreq: 'weekly', priority: '0.9' });
   for (const c of CATEGORIES) {
     entries.push({ loc: abs(`/categoria/${c.slug}`), lastmod: today, changefreq: 'weekly', priority: '0.7' });
   }

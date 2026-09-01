@@ -15,6 +15,7 @@ const buildDate = () => fmt(new Date(`${__BUILD_DATE__}T12:00:00`));
 const realToday = () => fmt(new Date());
 
 const FORMAT_LINKS = [
+  { to: '/checklist', label: 'Checklist' },
   { to: '/top-5', label: 'Top 5' },
   { to: '/top-10', label: 'Top 10' },
   { to: '/news', label: 'News' },

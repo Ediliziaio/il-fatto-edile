@@ -54,10 +54,10 @@ export const getTag = (slug: string) => tagMap.get(slug);
 export const SITE = {
   name: 'Il Fatto Edile',
   domain: 'https://www.ilfattoedile.it',
-  tagline: 'Imprese, professioni e mercato delle costruzioni',
+  tagline: 'La pratica di cantiere, passo per passo',
   description:
-    'Il Fatto Edile osserva il settore delle costruzioni come sistema economico: imprese e general contractor, professioni edili più richieste, dati di mercato, città dove conviene investire, housing sociale e rigenerazione urbana.',
+    'Il Fatto Edile è il sito della pratica professionale in cantiere: checklist operative, adempimenti, controlli e errori da evitare, spiegati passo per passo per chi lavora nelle costruzioni.',
   /** meta description home ottimizzata (<160 caratteri) per evitare il troncamento in SERP */
   metaDescription:
-    'Il settore delle costruzioni: imprese, professioni più richieste, dati di mercato, città dove conviene investire, housing sociale e rigenerazione urbana.',
+    'Checklist operative, adempimenti, controlli e errori da evitare in cantiere: la pratica professionale delle costruzioni spiegata passo per passo.',
 };
