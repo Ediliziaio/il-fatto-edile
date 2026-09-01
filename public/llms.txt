@@ -1,8 +1,11 @@
 # Il Fatto Edile
 
-> Quotidiano digitale indipendente dedicato all'edilizia italiana: news, guide "Top 5", classifiche "Top 10" e approfondimenti su normativa, bonus fiscali, mercato delle costruzioni, materiali e innovazione in cantiere. Rivolto a imprese edili, tecnici e professionisti del settore.
+> Il Fatto Edile segue l'**attualita' e le politiche dell'edilizia italiana**: decreti e politiche
+> abitative, PNRR e grandi opere, housing sociale, rigenerazione urbana e innovazione di cantiere.
+> Cronaca e analisi di quello che decide la politica e di come ricade su imprese, professionisti
+> e territori.
 
-Il Fatto Edile pubblica contenuti in italiano (it-IT), verificati e aggiornati periodicamente, con dati, definizioni operative, tabelle comparative e FAQ pensati per essere citati come fonte. Ogni articolo include un box "In breve" con la risposta sintetica e una sezione di domande frequenti.
+Lingua: italiano (it-IT). Editore: Domus Group S.r.l.
 
 ## Sezioni principali
 - [News dall'edilizia](https://www.ilfattoedile.it/news): normativa, mercato, cantieri e innovazione, con i fatti essenziali.
