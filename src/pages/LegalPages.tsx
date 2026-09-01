@@ -1,7 +1,5 @@
 import type { ReactNode } from 'react';
-import { Link } from 'react-router';
 import { SITE } from '@/data/articles';
-import { AUTHORS } from '@/data/authors';
 import { useSeo } from '@/lib/seo';
 
 function LegalLayout({
@@ -60,9 +58,9 @@ export function PrivacyPage() {
 
       <H2>1. Titolare del trattamento</H2>
       <P>
-        Titolare del trattamento è {SITE.name} (di seguito, il «Titolare»). Per qualsiasi richiesta relativa alla
-        privacy è possibile scrivere all’indirizzo email privacy@ilfattoedile.it. I riferimenti completi del
-        Titolare saranno indicati in questa sezione a seguito della registrazione della testata giornalistica.
+        Titolare del trattamento è Domus Group S.r.l., P.IVA 13132010961, con sede legale in Via Aurelio Saffi 29,
+        20123 Milano (MI), Italia, editore di {SITE.name} (di seguito, il «Titolare»). Per qualsiasi richiesta
+        relativa alla privacy è possibile scrivere all’indirizzo email privacy@ilfattoedile.it.
       </P>
 
       <H2>2. Tipologie di dati raccolti</H2>
@@ -284,20 +282,11 @@ export function ChiSiamoPage() {
         comparto costruzioni e risponde dei contenuti che firma. Da ogni scheda si accede alla biografia, al contatto
         diretto e all’archivio completo degli articoli. Per la redazione centrale: redazione@ilfattoedile.it.
       </P>
-      <ul className="mt-5 grid gap-4 sm:grid-cols-2">
-        {AUTHORS.map((a) => (
-          <li key={a.slug} className="border border-neutral-200 bg-neutral-50 p-4">
-            <Link
-              to={`/autore/${a.slug}`}
-              className="font-serif text-lg font-bold text-neutral-950 hover:text-red-700 hover:underline"
-            >
-              {a.name}
-            </Link>
-            <p className="mt-0.5 font-sans text-xs font-bold uppercase tracking-[0.15em] text-red-700">{a.role}</p>
-            <p className="mt-1.5 font-sans text-sm leading-relaxed text-neutral-600">{a.beat}</p>
-          </li>
-        ))}
-      </ul>
+      <P>
+        Le firme corrispondono a desk tematici (Normativa e Fisco, Mercato ed Economia, Innovazione e Digitale,
+        Progetti e Cantieri, Energia e Sostenibilità, Materiali e Prodotti): ogni contenuto è pubblicato a nome della
+        redazione, che ne risponde nel suo insieme. Per segnalazioni e rettifiche: redazione@ilfattoedile.it.
+      </P>
     </LegalLayout>
   );
 }

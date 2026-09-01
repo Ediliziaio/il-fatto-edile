@@ -1,6 +1,5 @@
 import { ARTICLES, CATEGORIES, SITE, TAGS, getArticle, getTag } from '@/data/articles';
-import { AUTHORS, getAuthor } from '@/data/authors';
-import { articleJsonLd, authorJsonLd, coverUrl } from '@/lib/seo';
+import { articleJsonLd, coverUrl } from '@/lib/seo';
 import type { ArticleFormat } from '@/types/article';
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
@@ -122,20 +121,6 @@ export function headFor(url: string): string {
     }
   }
 
-  const authorMatch = path.match(/^\/autore\/(.+)$/);
-  if (authorMatch) {
-    const au = getAuthor(authorMatch[1]);
-    if (au) {
-      const articles = ARTICLES.filter((a) => a.author === au.name);
-      return renderHead({
-        title: `${au.name} — ${au.role} | ${SITE.name}`,
-        description: `${au.name}, ${au.role} de Il Fatto Edile: ${au.beat.toLowerCase()}. Biografia, contatti e tutti gli articoli firmati.`,
-        canonical: `${SITE.domain}/autore/${au.slug}`,
-        jsonLd: authorJsonLd(au, articles),
-      });
-    }
-  }
-
   const catMatch = path.match(/^\/categoria\/(.+)$/);
   if (catMatch) {
     const c = CATEGORIES.find((x) => x.slug === catMatch[1]);
@@ -210,7 +195,6 @@ export const ROUTES: string[] = [
   ...(['top5', 'top10', 'news'] as ArticleFormat[]).map((f) => FORMAT_META[f].path),
   ...CATEGORIES.map((c) => `/categoria/${c.slug}`),
   ...ARTICLES.map((a) => `/articolo/${a.slug}`),
-  ...AUTHORS.map((a) => `/autore/${a.slug}`),
   ...TAGS.map((t) => `/tag/${t.slug}`),
   '/archivio',
   '/ricerca',
@@ -248,10 +232,6 @@ export function sitemapEntries(today: string): SitemapEntry[] {
       changefreq: 'weekly',
       priority: '0.8',
     });
-  }
-  // pagine autore: entita E-E-A-T, priorita alta per l'indicizzazione
-  for (const au of AUTHORS) {
-    entries.push({ loc: abs(`/autore/${au.slug}`), lastmod: today, changefreq: 'weekly', priority: '0.6' });
   }
   // solo i tag "forti" (indicizzabili): gli altri sono noindex e NON vanno in sitemap
   for (const t of TAGS.filter((t) => t.articles.length >= TAG_INDEX_MIN)) {

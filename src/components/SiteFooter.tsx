@@ -1,6 +1,5 @@
 import { Link } from 'react-router';
 import { CATEGORIES, SITE } from '@/data/articles';
-import { AUTHORS } from '@/data/authors';
 import logo from '@/assets/logo.png';
 
 export default function SiteFooter() {
@@ -69,18 +68,10 @@ export default function SiteFooter() {
 
       <div className="border-t border-neutral-800">
         <div className="mx-auto max-w-7xl px-4 py-5">
-          <p className="font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-neutral-400">Redazione</p>
-          <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
-            {AUTHORS.map((a) => (
-              <li key={a.slug}>
-                <Link to={`/autore/${a.slug}`} className="font-sans text-xs text-neutral-400 hover:text-white hover:underline">
-                  {a.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
           <p className="mt-4 font-sans text-xs text-neutral-500">
             © 2026 {SITE.name} — Periodico digitale di informazione sull’edilizia. Tutti i diritti riservati.
+            <br />
+            Editore: Domus Group S.r.l. — Via Aurelio Saffi 29, 20123 Milano (MI) — P.IVA 13132010961
           </p>
         </div>
       </div>

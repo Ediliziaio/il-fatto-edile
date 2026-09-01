@@ -16,7 +16,6 @@ const ChiSiamoPage = lazy(() => import('@/pages/LegalPages').then((m) => ({ defa
 const ContattiPage = lazy(() => import('@/pages/LegalPages').then((m) => ({ default: m.ContattiPage })));
 const TagPage = lazy(() => import('@/pages/TagSearchPages').then((m) => ({ default: m.TagPage })));
 const SearchPage = lazy(() => import('@/pages/TagSearchPages').then((m) => ({ default: m.SearchPage })));
-const AuthorPage = lazy(() => import('@/pages/AuthorPage'));
 const NotFound = lazy(() => import('@/pages/NotFound'));
 
 function ScrollToTop() {
@@ -43,7 +42,6 @@ export default function App() {
             <Route path="/news" element={<FormatPage format="news" />} />
             <Route path="/archivio" element={<ArchivePage />} />
             <Route path="/tag/:slug" element={<TagPage />} />
-            <Route path="/autore/:slug" element={<AuthorPage />} />
             <Route path="/ricerca" element={<SearchPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/cookie-policy" element={<CookiePolicyPage />} />
