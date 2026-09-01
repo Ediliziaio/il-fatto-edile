@@ -4,8 +4,15 @@ import { Menu, X, Mail, Search } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import logo from '@/assets/logo.png';
 
-const formatToday = () =>
-  new Date().toLocaleDateString('it-IT', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+declare const __BUILD_DATE__: string;
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString('it-IT', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+
+/** valore di partenza: uguale in SSR e nel primo render client (nessun mismatch) */
+const buildDate = () => fmt(new Date(`${__BUILD_DATE__}T12:00:00`));
+/** giorno reale di chi sta visitando */
+const realToday = () => fmt(new Date());
 
 const FORMAT_LINKS = [
   { to: '/top-5', label: 'Top 5' },
@@ -15,10 +22,10 @@ const FORMAT_LINKS = [
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
-  // la data è prerenderizzata al momento della build: la aggiorno al giorno reale lato client
-  const [today, setToday] = useState(formatToday);
+  // la data prerenderizzata è quella della build: la porto al giorno reale lato client
+  const [today, setToday] = useState(buildDate);
   useEffect(() => {
-    setToday(formatToday());
+    setToday(realToday());
   }, []);
 
   const navCls = ({ isActive }: { isActive: boolean }) =>
@@ -31,7 +38,7 @@ export default function SiteHeader() {
       {/* strip superiore */}
       <div className="border-b border-neutral-200 bg-neutral-950 text-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-1.5">
-          <p suppressHydrationWarning className="font-sans text-[11px] capitalize tracking-wide">{today}</p>
+          <p className="font-sans text-[11px] capitalize tracking-wide">{today}</p>
           <p className="hidden font-sans text-[11px] tracking-wide text-neutral-300 md:block">{SITE.tagline}</p>
           <a href="#newsletter" className="flex items-center gap-1.5 font-sans text-[11px] font-semibold uppercase tracking-wider hover:text-red-400">
             <Mail className="h-3.5 w-3.5" /> Newsletter

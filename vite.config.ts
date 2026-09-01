@@ -6,6 +6,9 @@ import { inspectAttr } from 'kimi-plugin-inspect-react'
 // https://vite.dev/config/
 export default defineConfig(({ mode, isSsrBuild }) => ({
   base: '/',
+  // data di build iniettata: server e client partono dallo STESSO valore
+  // (nessun mismatch di hydration), poi il client la aggiorna al giorno reale
+  define: { __BUILD_DATE__: JSON.stringify(new Date().toISOString().slice(0, 10)) },
   // inspectAttr() inietta attributi `code-path` nel DOM: utile in dev, va escluso
   // dalla build di produzione (altrimenti finisce nell'HTML prerenderizzato servito ai crawler).
   plugins: [...(mode === 'development' ? [inspectAttr()] : []), react()],
