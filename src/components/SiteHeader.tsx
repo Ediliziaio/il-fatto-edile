@@ -16,6 +16,7 @@ const realToday = () => fmt(new Date());
 
 const FORMAT_LINKS = [
   { to: '/checklist', label: 'Checklist' },
+  { to: '/domande', label: 'Domande' },
   { to: '/top-5', label: 'Top 5' },
   { to: '/top-10', label: 'Top 10' },
   { to: '/news', label: 'News' },

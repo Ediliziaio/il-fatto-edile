@@ -17,6 +17,7 @@ const ContattiPage = lazy(() => import('@/pages/LegalPages').then((m) => ({ defa
 const TagPage = lazy(() => import('@/pages/TagSearchPages').then((m) => ({ default: m.TagPage })));
 const SearchPage = lazy(() => import('@/pages/TagSearchPages').then((m) => ({ default: m.SearchPage })));
 const ChecklistPage = lazy(() => import('@/pages/ChecklistPage'));
+const QuestionsPage = lazy(() => import('@/pages/QuestionsPage'));
 const NotFound = lazy(() => import('@/pages/NotFound'));
 
 function ScrollToTop() {
@@ -43,6 +44,7 @@ export default function App() {
             <Route path="/news" element={<FormatPage format="news" />} />
             <Route path="/archivio" element={<ArchivePage />} />
             <Route path="/checklist" element={<ChecklistPage />} />
+            <Route path="/domande" element={<QuestionsPage />} />
             <Route path="/tag/:slug" element={<TagPage />} />
             <Route path="/ricerca" element={<SearchPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />

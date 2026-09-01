@@ -1,6 +1,7 @@
 import { ARTICLES, CATEGORIES, SITE, TAGS, getArticle, getTag } from '@/data/articles';
 import { articleJsonLd, coverUrl } from '@/lib/seo';
 import { checklistJsonLd, totalChecklistPoints } from '@/lib/checklist';
+import { questionsJsonLd, totalQuestions } from '@/lib/questions';
 import type { ArticleFormat } from '@/types/article';
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
@@ -168,6 +169,16 @@ export function headFor(url: string): string {
     });
   }
 
+  if (path === '/domande') {
+    const total = totalQuestions();
+    return renderHead({
+      title: `Le domande sul cantiere — ${total} risposte | ${SITE.name}`,
+      description: `${total} domande con risposta sulla pratica di cantiere: permessi, adempimenti, verifiche, documenti e costi, raggruppate per ambito.`,
+      canonical: `${SITE.domain}/domande`,
+      jsonLd: questionsJsonLd(),
+    });
+  }
+
   if (path === '/archivio') {
     return renderHead({
       title: `Archivio: tutti gli articoli | ${SITE.name}`,
@@ -209,6 +220,7 @@ export const ROUTES: string[] = [
   ...TAGS.map((t) => `/tag/${t.slug}`),
   '/archivio',
   '/checklist',
+  '/domande',
   '/ricerca',
   ...Object.keys(LEGAL_META),
 ];
@@ -236,6 +248,7 @@ export function sitemapEntries(today: string): SitemapEntry[] {
   entries.push({ loc: abs('/archivio'), lastmod: today, changefreq: 'weekly', priority: '0.6' });
   // asset distintivo della testata: massima priorita' dopo la home
   entries.push({ loc: abs('/checklist'), lastmod: today, changefreq: 'weekly', priority: '0.9' });
+  entries.push({ loc: abs('/domande'), lastmod: today, changefreq: 'weekly', priority: '0.9' });
   for (const c of CATEGORIES) {
     entries.push({ loc: abs(`/categoria/${c.slug}`), lastmod: today, changefreq: 'weekly', priority: '0.7' });
   }

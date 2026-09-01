@@ -58,6 +58,7 @@ export default function SiteFooter() {
           <h3 className="font-sans text-xs font-bold uppercase tracking-[0.2em] text-white">Testata</h3>
           <ul className="mt-4 space-y-2">
             <li><Link className="font-sans text-sm hover:text-white" to="/checklist">Indice checklist</Link></li>
+            <li><Link className="font-sans text-sm hover:text-white" to="/domande">Domande e risposte</Link></li>
             <li><Link className="font-sans text-sm hover:text-white" to="/archivio">Archivio articoli</Link></li>
             <li><Link className="font-sans text-sm hover:text-white" to="/chi-siamo">Chi siamo</Link></li>
             <li><Link className="font-sans text-sm hover:text-white" to="/contatti">Contatti e pubblicità</Link></li>

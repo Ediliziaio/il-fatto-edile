@@ -27,7 +27,7 @@ sito **ha già**, non su un'idea a tavolino.
 | **ilcardine.it** | Efficienza energetica e impianti | 11/39 articoli nel cluster (quota maggiore) | guide su involucro, FV, pompe di calore, VMC |
 | **mediaedile.it** | Classifiche produttori e marchi | 20/30 articoli sono classifiche (67%) | `/produttori` — Indice, 144 marchi, `ItemList` |
 | **edilizia24ore.it** | News e attualità di settore | 14/44 news, unico con categoria dedicata | cronaca quotidiana del settore |
-| **ilfattoedile.it** | Cantiere e pratica professionale | 22 classifiche su pratiche, non su prodotti | `/checklist` — Indice, 159 controlli, `CollectionPage`+`ItemList` |
+| **ilfattoedile.it** | Cantiere e pratica professionale | 22 classifiche su pratiche, non su prodotti | `/checklist` (159 controlli) + `/domande` (129 risposte) |
 | **corrieredile.it** | B2B imprese e professionisti | titoli rivolti a "imprese, artigiani, professionisti" | normativa e mercato per chi lavora |
 | **ilgiornaleedile.it** | Comparatori / guide alla scelta | 7 comparatori interattivi già online | `/comparatore/` — strumenti di confronto |
 | **infissimedia.it** | Serramenti e infissi | verticale monotematico | l'unico già verticalizzato |
@@ -66,7 +66,7 @@ una ragione concreta per indicizzarlo:
 
 - fatto: rassegnaedile (Osservatorio prezzi, 79 voci), mediaedile (Indice
   produttori, 144 marchi), ilgiornaleedile (7 comparatori), ilfattoedile
-  (Indice checklist, 159 controlli)
+  (Indice checklist 159 controlli + Indice domande 129 risposte)
 - da fare: ilcardine, edilizia24ore, corrieredile
 
 ## Avvertenza operativa
