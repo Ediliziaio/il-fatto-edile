@@ -1,9 +1,10 @@
 # Il Fatto Edile
 
-> Il Fatto Edile racconta come si lavora bene in cantiere: adempimenti e sicurezza,
-> controlli da fare prima di aprire un cantiere, errori ricorrenti che fanno lievitare
-> costi e tempi, professioni edili richieste e tecnologie di cantiere. Contenuti
-> operativi, in forma di checklist e confronti, per imprese, artigiani e committenti.
+> Il Fatto Edile osserva il **settore delle costruzioni come sistema economico e professionale**:
+> imprese e general contractor italiani, professioni edili piu' richieste, dati di mercato (ANCE),
+> citta' e territori dove conviene investire, housing sociale e rigenerazione urbana, fiere,
+> politiche pubbliche e trend del comparto. Non guide tecniche di cantiere: chi fa il mercato,
+> quanto vale e dove sta andando.
 
 Lingua: italiano (it-IT). Editore: Domus Group S.r.l.
 
