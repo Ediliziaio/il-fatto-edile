@@ -87,7 +87,7 @@ export function headFor(url: string): string {
 
   if (path === '/') {
     return renderHead({
-      title: `${SITE.name} — News, bonus e guide per l'edilizia italiana`,
+      title: `${SITE.name} — Attualità e politiche dell'edilizia italiana`,
       description: SITE.metaDescription,
       canonical: SITE.domain + '/',
       image: `${SITE.domain}/images/logo.png`,
@@ -199,7 +199,7 @@ export function headFor(url: string): string {
   }
 
   return renderHead({
-    title: `${SITE.name} — News, bonus e guide per l'edilizia italiana`,
+    title: `${SITE.name} — Attualità e politiche dell'edilizia italiana`,
     description: SITE.description,
     canonical: SITE.domain + path,
   });

@@ -17,7 +17,7 @@ function SectionTitle({ title, to }: { title: string; to: string }) {
 
 export default function Home() {
   useSeo({
-    title: `${SITE.name} — News, bonus e guide per l'edilizia italiana`,
+    title: `${SITE.name} — Attualità e politiche dell'edilizia italiana`,
     description: SITE.metaDescription,
     canonical: SITE.domain,
     jsonLd: {

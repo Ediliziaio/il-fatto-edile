@@ -54,10 +54,10 @@ export const getTag = (slug: string) => tagMap.get(slug);
 export const SITE = {
   name: 'Il Fatto Edile',
   domain: 'https://www.ilfattoedile.it',
-  tagline: 'Il quotidiano digitale dell\u2019edilizia italiana',
+  tagline: 'Il quotidiano dell\u2019attualit\u00e0 e delle politiche per l\u2019edilizia',
   description:
-    'Il Fatto Edile: news, guide e classifiche su edilizia, bonus, normativa, mercato delle costruzioni, materiali e innovazione in cantiere. Informazione indipendente per imprese e professionisti.',
+    'Il Fatto Edile racconta l\'attualità dell\'edilizia italiana: decreti e politiche abitative, PNRR e grandi opere, housing sociale, edilizia scolastica e innovazione di cantiere. Cronaca e analisi indipendenti per imprese e professionisti.',
   /** meta description home ottimizzata (<160 caratteri) per evitare il troncamento in SERP */
   metaDescription:
-    'News, guide e classifiche sull\u2019edilizia italiana: bonus, normativa, mercato delle costruzioni, materiali e innovazione in cantiere. Aggiornato ogni giorno.',
+    'Attualità dell\'edilizia italiana: decreti e politiche abitative, PNRR e grandi opere, housing sociale e innovazione di cantiere. Cronaca e analisi ogni giorno.',
 };
