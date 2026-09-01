@@ -8,10 +8,13 @@
 Lingua: italiano (it-IT). Editore: Domus Group S.r.l., P.IVA 13132010961, Milano.
 Firma: Redazione Il Fatto Edile (i contenuti sono pubblicati a nome della testata).
 
-## Risorsa distintiva
+## Risorse distintive
 - [Indice delle checklist di cantiere](https://www.ilfattoedile.it/checklist):
   159 controlli operativi ricavati da 30 guide, raggruppati in 8 ambiti. Ogni
   voce indica cosa verificare e rimanda alla guida che la spiega per esteso.
+- [Le domande sul cantiere](https://www.ilfattoedile.it/domande): 129 domande
+  con risposta in chiaro su permessi, adempimenti, verifiche, documenti e costi,
+  raggruppate per ambito e collegate alla guida che approfondisce.
 
 ## Sezioni principali
 - [Guide Top 5](https://www.ilfattoedile.it/top-5): cinque punti operativi per volta — adempimenti, controlli, errori da evitare, criteri di scelta.
