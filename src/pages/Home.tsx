@@ -17,7 +17,7 @@ function SectionTitle({ title, to }: { title: string; to: string }) {
 
 export default function Home() {
   useSeo({
-    title: `${SITE.name} — Attualità e politiche dell'edilizia italiana`,
+    title: `${SITE.name} — Imprese, professioni e politiche delle costruzioni`,
     description: SITE.metaDescription,
     canonical: SITE.domain,
     jsonLd: {
