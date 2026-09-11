@@ -1,8 +1,30 @@
+import { useState, type FormEvent } from 'react';
 import { Link } from 'react-router';
 import { CATEGORIES, SITE } from '@/data/articles';
+import { inviaLead } from '@/lib/eicLead';
 import logo from '@/assets/logo.png';
 
+type StatoIscrizione = 'idle' | 'invio' | 'ok' | 'errore';
+
 export default function SiteFooter() {
+  const [email, setEmail] = useState('');
+  const [stato, setStato] = useState<StatoIscrizione>('idle');
+
+  // l'iscrizione va al CRM Edilizia in Cloud con la campagna di provenienza;
+  // la conferma compare solo quando il CRM ha accettato
+  async function iscrivi(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (stato === 'invio') return;
+    setStato('invio');
+    try {
+      await inviaLead(SITE.crmFormId, { email: email.trim(), tipo: 'newsletter' });
+      setStato('ok');
+    } catch {
+      // l'email resta nel campo: si può riprovare senza riscriverla
+      setStato('errore');
+    }
+  }
+
   return (
     <footer className="mt-16 bg-neutral-950 text-neutral-300">
       {/* newsletter */}
@@ -14,19 +36,41 @@ export default function SiteFooter() {
               Ogni mattina alle 7: normativa, bonus, mercato e le guide essenziali per chi costruisce. Gratis, senza spam.
             </p>
           </div>
-          <form className="flex w-full max-w-md gap-2" onSubmit={(e) => e.preventDefault()}>
-            <label htmlFor="nl-email" className="sr-only">Indirizzo email</label>
-            <input
-              id="nl-email"
-              type="email"
-              required
-              placeholder="La tua email"
-              className="w-full border border-neutral-700 bg-neutral-900 px-4 py-2.5 font-sans text-sm text-white placeholder:text-neutral-500 focus:border-red-600 focus:outline-none"
-            />
-            <button type="submit" className="shrink-0 bg-red-700 px-5 py-2.5 font-sans text-sm font-bold uppercase tracking-wider text-white hover:bg-red-600">
-              Iscriviti
-            </button>
-          </form>
+          {stato === 'ok' ? (
+            <p role="status" className="w-full max-w-md font-sans text-sm text-white">
+              Iscrizione registrata per <strong>{email.trim()}</strong>. Grazie!
+            </p>
+          ) : (
+            <div className="w-full max-w-md">
+              <form className="flex w-full gap-2" onSubmit={iscrivi}>
+                <label htmlFor="nl-email" className="sr-only">Indirizzo email</label>
+                <input
+                  id="nl-email"
+                  name="email"
+                  type="email"
+                  required
+                  autoComplete="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="La tua email"
+                  aria-describedby={stato === 'errore' ? 'nl-errore' : undefined}
+                  className="w-full border border-neutral-700 bg-neutral-900 px-4 py-2.5 font-sans text-sm text-white placeholder:text-neutral-500 focus:border-red-600 focus:outline-none"
+                />
+                <button
+                  type="submit"
+                  disabled={stato === 'invio'}
+                  className="shrink-0 bg-red-700 px-5 py-2.5 font-sans text-sm font-bold uppercase tracking-wider text-white hover:bg-red-600 disabled:cursor-wait disabled:opacity-70"
+                >
+                  {stato === 'invio' ? 'Invio…' : 'Iscriviti'}
+                </button>
+              </form>
+              {stato === 'errore' && (
+                <p id="nl-errore" role="alert" className="mt-2 font-sans text-xs font-semibold text-red-400">
+                  Invio non riuscito. Riprova tra poco.
+                </p>
+              )}
+            </div>
+          )}
         </div>
       </div>
 

@@ -60,4 +60,6 @@ export const SITE = {
   /** meta description home ottimizzata (<160 caratteri) per evitare il troncamento in SERP */
   metaDescription:
     'Checklist operative, adempimenti, controlli e errori da evitare in cantiere: la pratica professionale delle costruzioni spiegata passo per passo.',
+  /** form del CRM Edilizia in Cloud che riceve le iscrizioni alla newsletter */
+  crmFormId: '602f4126-99bd-49c5-b978-4144eb327533',
 };
