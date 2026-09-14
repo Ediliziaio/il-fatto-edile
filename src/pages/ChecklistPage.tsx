@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router';
-import { ARTICLES, CATEGORIES, SITE } from '@/data/articles';
+import { INDEX_ARTICLES as ARTICLES, CATEGORIES, SITE } from '@/data/articles';
 import { useSeo } from '@/lib/seo';
 import { checklistJsonLd, totalChecklistPoints } from '@/lib/checklist';
 import { ArrowRight, RotateCcw } from 'lucide-react';

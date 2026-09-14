@@ -1,4 +1,4 @@
-import { ARTICLES, CATEGORIES, SITE, categoryLabel } from '@/data/articles';
+import { INDEX_ARTICLES as ARTICLES, CATEGORIES, SITE, categoryLabel } from '@/data/articles';
 
 /** numero totale di controlli operativi indicizzati (asset distintivo della testata) */
 export const totalChecklistPoints = () =>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { ARTICLES, CATEGORIES, SITE } from '@/data/articles';
+import { INDEX_ARTICLES as ARTICLES, CATEGORIES, SITE } from '@/data/articles';
 import { useSeo } from '@/lib/seo';
 import { questionsJsonLd, totalQuestions } from '@/lib/questions';
 import { HelpCircle, ArrowRight } from 'lucide-react';

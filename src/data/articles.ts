@@ -3,10 +3,17 @@ import { CATEGORIES } from '@/types/article';
 import { batch1 } from './articles-batch1';
 import { batch2 } from './articles-batch2';
 import { batch3 } from './articles-batch3';
+import { batch4 } from './articles-batch4';
 
-export const ARTICLES: Article[] = [...batch1, ...batch2, ...batch3].sort(
+export const ARTICLES: Article[] = [...batch1, ...batch2, ...batch3, ...batch4].sort(
   (a, b) => b.publishedAt.localeCompare(a.publishedAt),
 );
+
+/**
+ * Articoli che alimentano gli indici tematici del sito (checklist, domande):
+ * restano fuori i contenuti che non parlano di pratica di cantiere.
+ */
+export const INDEX_ARTICLES: Article[] = ARTICLES.filter((a) => !a.excludeFromIndexes);
 
 export const getArticle = (slug: string) => ARTICLES.find((a) => a.slug === slug);
 

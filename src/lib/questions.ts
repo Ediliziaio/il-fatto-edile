@@ -1,4 +1,4 @@
-import { ARTICLES, CATEGORIES, SITE } from '@/data/articles';
+import { INDEX_ARTICLES as ARTICLES, CATEGORIES, SITE } from '@/data/articles';
 
 /** numero totale di domande con risposta pubblicate (secondo asset della testata) */
 export const totalQuestions = () => ARTICLES.reduce((n, a) => n + a.faq.length, 0);

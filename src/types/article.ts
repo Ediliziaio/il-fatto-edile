@@ -67,4 +67,6 @@ export interface Article {
   faq: FaqItem[];
   /** corpo articolo: somma dei testi >= 4000 caratteri */
   content: Block[];
+  /** true = escluso dagli indici di checklist e domande */
+  excludeFromIndexes?: boolean;
 }

@@ -1,3 +1,4 @@
+import { renderInline } from '@/lib/inline';
 import { Link, useParams } from 'react-router';
 import { Fragment } from 'react';
 import { ARTICLES, SITE, categoryLabel, getArticle, relatedArticles, slugifyTag } from '@/data/articles';
@@ -33,12 +34,12 @@ function renderBlock(b: Block, i: number) {
     case 'h3':
       return <h3 key={i} className="mt-8 font-serif text-xl font-bold text-neutral-900">{b.text}</h3>;
     case 'p':
-      return <p key={i} className="mt-5 font-body text-[18px] leading-[1.75] text-neutral-800">{b.text}</p>;
+      return <p key={i} className="mt-5 font-body text-[18px] leading-[1.75] text-neutral-800">{renderInline(b.text)}</p>;
     case 'list':
       return (
         <ul key={i} className="mt-5 space-y-2.5 border-l-2 border-red-700 pl-5">
           {b.items.map((it, j) => (
-            <li key={j} className="font-body text-[17px] leading-relaxed text-neutral-800">{it}</li>
+            <li key={j} className="font-body text-[17px] leading-relaxed text-neutral-800">{renderInline(it)}</li>
           ))}
         </ul>
       );
@@ -60,7 +61,7 @@ function renderBlock(b: Block, i: number) {
             </thead>
             <tbody>
               {b.rows.map((r, j) => (
-                <tr key={j}>{r.map((c, k) => <td key={k} className="border border-neutral-300 px-3 py-2 text-neutral-800">{c}</td>)}</tr>
+                <tr key={j}>{r.map((c, k) => <td key={k} className="border border-neutral-300 px-3 py-2 text-neutral-800">{renderInline(c)}</td>)}</tr>
               ))}
             </tbody>
           </table>
@@ -160,19 +161,24 @@ export default function ArticlePage() {
           </figure>
 
           {/* key points — featured snippet / AI overview */}
-          <section aria-label="In breve" className="mt-8 border-l-4 border-neutral-950 bg-neutral-50 p-6">
-            <h2 className="flex items-center gap-2 font-sans text-sm font-bold uppercase tracking-[0.2em] text-neutral-950">
-              <ListChecks className="h-4 w-4 text-red-700" /> In breve
-            </h2>
-            <ul className="mt-3 space-y-2">
-              {article.keyPoints.map((k, i) => (
-                <li key={i} className="flex gap-2 font-body text-[16px] leading-relaxed text-neutral-800">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 bg-red-700" aria-hidden />
-                  {k}
-                </li>
-              ))}
-            </ul>
-          </section>
+
+          {article.keyPoints.length > 0 && (
+
+            <section aria-label="In breve" className="mt-8 border-l-4 border-neutral-950 bg-neutral-50 p-6">
+              <h2 className="flex items-center gap-2 font-sans text-sm font-bold uppercase tracking-[0.2em] text-neutral-950">
+                <ListChecks className="h-4 w-4 text-red-700" /> In breve
+              </h2>
+              <ul className="mt-3 space-y-2">
+                {article.keyPoints.map((k, i) => (
+                  <li key={i} className="flex gap-2 font-body text-[16px] leading-relaxed text-neutral-800">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 bg-red-700" aria-hidden />
+                    {k}
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+          )}
 
           {/* corpo */}
           <div className="mt-2">
