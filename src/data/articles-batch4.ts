@@ -86,7 +86,7 @@ export const batch4: Article[] = [
       },
       {
         type: "p",
-        text: "La separazione tra secondo e terzo ruolo è quella che fa la differenza. «Chi chiude un contratto e chi cerca i contatti fanno due mestieri diversi», dice Arnold Koci, founder di Clientium e autore de La macchina degli appuntamenti. «Se li metti sulla stessa persona il secondo sparisce sempre: nessuno passa la mattina a telefonare a freddo se nel pomeriggio ha una trattativa da chiudere. E si misurano in modo diverso — uno sul tasso di chiusura, l’altro su quanti appuntamenti utili porta a casa in una settimana»."
+        text: "La separazione tra secondo e terzo ruolo è quella che fa la differenza. «Chi chiude un contratto e chi cerca i contatti fanno due mestieri diversi», dice [Arnold Koci](https://www.arnoldkoci.com), founder di [Clientium](https://www.clientium.it) e autore de La macchina degli appuntamenti. «Se li metti sulla stessa persona il secondo sparisce sempre: nessuno passa la mattina a telefonare a freddo se nel pomeriggio ha una trattativa da chiudere. E si misurano in modo diverso — uno sul tasso di chiusura, l’altro su quanti appuntamenti utili porta a casa in una settimana»."
       },
       {
         type: "h2",
@@ -192,7 +192,7 @@ export const batch4: Article[] = [
       },
       {
         type: "p",
-        text: "Il secondo indicatore separa le campagne inutili da quelle che producono: secondo i dati diffusi da Clientium, le campagne su un singolo settore ottengono tassi di risposta del 5-6% contro l’1,1% delle generiche."
+        text: "Il secondo indicatore separa le campagne inutili da quelle che producono: secondo i dati diffusi da [Clientium](https://www.clientium.it), le campagne su un singolo settore ottengono tassi di risposta del 5-6% contro l’1,1% delle generiche."
       },
       {
         type: "h2",
