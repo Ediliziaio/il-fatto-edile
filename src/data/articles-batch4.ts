@@ -226,4 +226,204 @@ export const batch4: Article[] = [
     ],
     excludeFromIndexes: true
   },
+  {
+    slug: "sal-non-pagato-cosa-fare",
+    title: "Il committente non paga il SAL: la procedura passo per passo nei primi 60 giorni",
+    excerpt: "SAL non pagato, cosa fare: diffida, sospensione dei lavori e decreto ingiuntivo. La procedura passo per passo quando il committente non paga.",
+    format: "news",
+    category: "normativa-bonus",
+    tags: [
+      "SAL non pagato cosa fare",
+      "recupero crediti edilizia",
+      "decreto ingiuntivo",
+      "diffida ad adempiere"
+    ],
+    author: "Avv. Armando Rossi",
+    authorRole: "Avvocato del Foro di Napoli",
+    publishedAt: "2026-09-15",
+    readingTime: 6,
+    coverTheme: "blueprint",
+    coverAlt: "Il committente non paga il SAL: la procedura passo per passo nei primi 60 giorni",
+    keywords: [
+      "SAL non pagato cosa fare",
+      "recupero crediti edilizia"
+    ],
+    keyPoints: [],
+    faq: [
+      {
+        q: "L’impresa può fermare il cantiere quando non viene pagata?",
+        a: "In termini generali, non automaticamente. L’articolo 1460 del codice civile consente di rifiutare la propria prestazione se l’altra parte non adempie, ma vieta il rifiuto contrario alla buona fede. Contano la gravità del mancato pagamento e la proporzione fra i due inadempimenti: fermare tutto per una partita modesta rende inadempiente l’impresa."
+      },
+      {
+        q: "Quanto tempo serve per ottenere un decreto ingiuntivo?",
+        a: "In termini generali dipende dal tribunale e dalla completezza del fascicolo. L’articolo 641 del codice di procedura civile prevede che il decreto ingiunga il pagamento entro quaranta giorni, termine entro cui il debitore può opporsi. Con la provvisoria esecutorietà il titolo è azionabile subito."
+      },
+      {
+        q: "Da dove comincia il recupero crediti edilizia se manca un contratto scritto?",
+        a: "In termini generali, dai documenti che esistono comunque: preventivo accettato, ordini, fatture, SAL controfirmati, corrispondenza. Il recupero crediti edilizia si regge sulla prova scritta, che non coincide con il contratto formale. L’assenza di un contratto firmato indebolisce la posizione, non la rende insostenibile."
+      }
+    ],
+    content: [
+      {
+        type: "p",
+        text: "Il SAL è lo stato di avanzamento lavori. Misura la parte di opera eseguita e legittima l’impresa a incassare la quota corrispondente. Se il committente non paga, il problema non è tecnico ma contrattuale. E la domanda — SAL non pagato, cosa fare — si decide nelle prime settimane."
+      },
+      {
+        type: "h2",
+        text: "Il primo errore: continuare a lavorare come se niente fosse"
+      },
+      {
+        type: "p",
+        text: "L’errore più diffuso non è sospendere troppo presto: è non fare nulla. Si va avanti, si emette il SAL successivo, si accumula credito."
+      },
+      {
+        type: "p",
+        text: "L’articolo 1666 del codice civile consente all’appaltatore, nelle opere da eseguire per partite, di chiedere la verifica della singola partita e il pagamento in proporzione all’opera eseguita, e stabilisce che il pagamento fa presumere l’accettazione della parte pagata, a differenza dei semplici acconti. Tradotto: il SAL pagato chiude una partita, il SAL non pagato la lascia aperta con ogni contestazione futura."
+      },
+      {
+        type: "p",
+        text: "Quindi, entro cinque giorni dalla scadenza si scrive: un sollecito di pagamento dell’impresa edile per PEC, con numero e data del SAL, importo e scadenza. È la prima riga del fascicolo. E si continua a fatturare: la fattura apre la strada al decreto ingiuntivo."
+      },
+      {
+        type: "h2",
+        text: "La sospensione dei lavori: quando è legittima e quando diventa inadempimento dell’impresa"
+      },
+      {
+        type: "p",
+        text: "Qui si sbaglia più che altrove. Fermare il cantiere perché non si viene pagati non è automaticamente legittimo, e chi sbaglia passa dalla parte del torto."
+      },
+      {
+        type: "p",
+        text: "Lo strumento è l’eccezione di inadempimento: il diritto di rifiutare la propria prestazione finché l’altra parte non esegue la sua. L’articolo 1460 del codice civile lo riconosce nei contratti a prestazioni corrispettive, salvo che termini diversi siano stati stabiliti dalle parti o risultino dalla natura del contratto, e nel secondo comma vieta il rifiuto che, avuto riguardo alle circostanze, sia contrario alla buona fede."
+      },
+      {
+        type: "p",
+        text: "Due limiti, nessuno teorico. Il primo è il **termine**. Se il contratto prevede che l’impresa esegua prima e venga pagata dopo — cioè quasi sempre, nell’appalto a SAL — si oppone l’inadempimento già maturato, non quello futuro e temuto."
+      },
+      {
+        type: "p",
+        text: "Il secondo è la **proporzionalità**. Fermare un cantiere intero per una partita modesta, o per pochi giorni di ritardo su un rapporto fin lì regolare, è la reazione che viene valutata come contraria alla buona fede. Lì la sospensione non protegge: diventa inadempimento, espone alle penali e può giustificare la risoluzione in danno dell’impresa."
+      },
+      {
+        type: "p",
+        text: "Il cantiere poi si ferma, non si abbandona: gli obblighi di custodia restano. E la sospensione non fa incassare nulla: è un rimedio difensivo, non un recupero."
+      },
+      {
+        type: "h2",
+        text: "La diffida ad adempiere: che cos’è e come si scrive"
+      },
+      {
+        type: "p",
+        text: "La diffida ad adempiere intima all’altra parte di adempiere entro un termine, dichiarando che, decorso inutilmente quel termine, il contratto si intenderà risoluto. L’articolo 1454 del [codice civile](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262) richiede la forma scritta e un termine non inferiore a quindici giorni, salvo diversa pattuizione delle parti o salvo che, per la natura del contratto o secondo gli usi, sia congruo un termine minore. Poi il contratto è risolto di diritto: senza giudice e senza sentenza."
+      },
+      {
+        type: "p",
+        text: "Proprio per questo va maneggiata con prudenza. L’articolo 1453 del codice civile stabilisce che, chiesta la risoluzione, non si può più domandare l’adempimento e l’inadempiente non può più eseguire la prestazione. È una porta a senso unico: se l’obiettivo è finire i lavori e incassare, la diffida è lo strumento sbagliato. Serve una costituzione in mora, che sollecita il pagamento e fa decorrere gli interessi senza sciogliere il contratto."
+      },
+      {
+        type: "p",
+        text: "Non possono mancare: riferimenti del contratto, numero e importo del SAL, termine assegnato, dichiarazione espressa dell’effetto risolutivo."
+      },
+      {
+        type: "h2",
+        text: "Il decreto ingiuntivo per lavori edili: requisiti, prova scritta, tempi"
+      },
+      {
+        type: "p",
+        text: "Il decreto ingiuntivo è il provvedimento che il giudice emette sui soli documenti del creditore, senza sentire la controparte: lo disciplinano gli articoli 633 e seguenti del codice di procedura civile. L’articolo 641 prevede che ingiunga il pagamento entro quaranta giorni, avvertendo il debitore che può opporsi entro lo stesso termine."
+      },
+      {
+        type: "p",
+        text: "Il perno è l’articolo 634 del codice di procedura civile, che per i crediti degli imprenditori riconosce come prova scritta gli estratti autentici delle scritture contabili regolarmente tenute e le fatture elettroniche passate dal Sistema di Interscambio. L’articolo 642 consente la provvisoria esecutorietà — il decreto è azionabile subito — se il ritardo espone a un grave pregiudizio o se si produce documentazione sottoscritta dal debitore: un SAL controfirmato dal committente o dalla direzione lavori è esattamente questo."
+      },
+      {
+        type: "p",
+        text: "Il committente che non paga, però, quasi mai tace: contesta qualità dell’opera o ritardi e oppone a sua volta l’eccezione di inadempimento, cioè il rifiuto di pagare giustificato da un inadempimento dell’impresa. Per questo il recupero crediti edilizia si decide sulla prova scritta prima che sull’importo: la prova scritta è il documento da cui il giudice ricava, senza istruttoria e senza testimoni, che il credito esiste. Le guide dedicate al [recupero crediti in edilizia](https://www.edilizialegale.it/guide/recupero-crediti-edilizia) ricostruiscono il passaggio documento per documento, trattando il SAL non pagato come una questione probatoria prima che processuale."
+      },
+      {
+        type: "h2",
+        text: "Che cosa deve esserci nel fascicolo: il recupero crediti edilizia comincia dalle carte"
+      },
+      {
+        type: "table",
+        headers: [
+          "Documento",
+          "Perché serve",
+          "Chi lo tiene"
+        ],
+        rows: [
+          [
+            "Contratto d’appalto o corrispondenza",
+            "Fissa corrispettivo, termini, penali, sospensione",
+            "Titolare"
+          ],
+          [
+            "SAL firmato dal committente o dalla direzione lavori",
+            "Sottoscritto dal debitore: apre alla provvisoria esecutorietà",
+            "Capo cantiere"
+          ],
+          [
+            "Fattura elettronica via Sistema di Interscambio",
+            "Prova scritta tipica ex art. 634 c.p.c.",
+            "Amministrazione"
+          ],
+          [
+            "Giornale di cantiere e rapportini",
+            "Datano le lavorazioni, reggono in opposizione",
+            "Capo cantiere"
+          ],
+          [
+            "PEC di sollecito, diffide, contestazioni ricevute",
+            "Costituiscono in mora, fotografano le eccezioni altrui",
+            "Titolare"
+          ]
+        ]
+      },
+      {
+        type: "p",
+        text: "Servono anche il computo metrico e il prospetto delle **ritenute a garanzia**: la percentuale che il committente trattiene su ogni SAL fino al collaudo. Nell’appalto privato nessuna norma le impone: esistono solo se il contratto le prevede, e chiederle in decreto ingiuntivo prima che siano esigibili è il modo più rapido per farsi revocare il provvedimento."
+      },
+      {
+        type: "p",
+        text: "Gli **interessi di mora** sono quanto spetta per il ritardo, oltre al capitale. Tra imprese vale il [d.lgs. 231/2002](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2002-10-09;231) sui ritardi di pagamento nelle transazioni commerciali: trenta giorni di termine legale, elevabili a sessanta per accordo scritto, interessi al [tasso di riferimento](https://ance.it/wp-content/uploads/allegati/Tabella_storica_tasso_di_mora.pdf) BCE maggiorato di otto punti più quaranta euro forfettari di costi di recupero. Se il committente è un consumatore non si applica: copre solo imprese e pubbliche amministrazioni."
+      },
+      {
+        type: "h2",
+        text: "Checklist dei primi 60 giorni: SAL non pagato, cosa fare settimana per settimana"
+      },
+      {
+        type: "p",
+        text: "**Giorni 1-5.** Rileggere il contratto: termini, ritenute, penali, clausole sulla sospensione. PEC di sollecito con numero di SAL, importo, scadenza."
+      },
+      {
+        type: "p",
+        text: "**Giorni 5-15.** Decidere sulla sospensione: solo se il credito scaduto è significativo, solo per iscritto e motivata, solo proporzionata. Intanto documentare: foto datate, rapportini, verbali."
+      },
+      {
+        type: "p",
+        text: "**Giorni 15-30.** Costituzione in mora con richiesta degli interessi. Chiusura del fascicolo. Estratto autentico delle scritture contabili al commercialista."
+      },
+      {
+        type: "p",
+        text: "**Giorni 30-45.** Scegliere: diffida ad adempiere se si vuole sciogliere il contratto, ricorso monitorio se si vuole incassare. Non entrambe."
+      },
+      {
+        type: "p",
+        text: "**Giorni 45-60.** Deposito del ricorso con istanza di provvisoria esecutorietà, dopo la verifica che fa risparmiare di più: la solvibilità del committente. Se non ha beni aggredibili, il titolo esecutivo è una spesa senza incasso e una transazione anche penalizzante vale più di una causa vinta."
+      },
+      {
+        type: "p",
+        text: "Sessanta giorni non sono un termine di legge: nessuna decadenza scatta al sessantunesimo. Servono a imporsi una sequenza: il credito di cantiere si deteriora con il silenzio. Chi documenta arriva davanti al giudice con un fascicolo che parla da solo."
+      },
+      {
+        type: "p",
+        text: "**Avv. Armando Rossi** — Avvocato del Foro di Napoli, si occupa di diritto dell’edilizia e degli appalti privati. Assiste imprese di costruzioni, artigiani e committenti in materia di contratti d’appalto, recupero crediti, difetti costruttivi e contenzioso di cantiere. Scrive su edilizialegale.it."
+      },
+      {
+        type: "p",
+        text: "Il contenuto di questo articolo ha carattere informativo generale, non costituisce parere legale e non sostituisce l’esame del caso concreto, che richiede la lettura dei documenti e la valutazione delle circostanze specifiche."
+      }
+    ],
+    excludeFromIndexes: true
+  },
 ];
