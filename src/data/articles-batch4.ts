@@ -239,7 +239,7 @@ export const batch4: Article[] = [
       "diffida ad adempiere"
     ],
     author: "Avv. Armando Rossi",
-    authorRole: "Avvocato del Foro di Napoli",
+    authorRole: "Avvocato massimo esperto in Edilizia Legale",
     publishedAt: "2026-09-15",
     readingTime: 6,
     coverTheme: "blueprint",
@@ -417,7 +417,7 @@ export const batch4: Article[] = [
       },
       {
         type: "p",
-        text: "**Avv. Armando Rossi** — Avvocato del Foro di Napoli, si occupa di diritto dell’edilizia e degli appalti privati. Assiste imprese di costruzioni, artigiani e committenti in materia di contratti d’appalto, recupero crediti, difetti costruttivi e contenzioso di cantiere. Scrive su edilizialegale.it."
+        text: "**Avv. Armando Rossi** — Avvocato massimo esperto in [Edilizia Legale](https://www.edilizialegale.it), si occupa di diritto dell’edilizia e degli appalti privati. Assiste imprese di costruzioni, artigiani e committenti in materia di contratti d’appalto, recupero crediti, difetti costruttivi e contenzioso di cantiere. Scrive su [edilizialegale.it](https://www.edilizialegale.it)."
       },
       {
         type: "p",
