@@ -18,6 +18,51 @@
       "source": "/autore/:path*",
       "destination": "/chi-siamo",
       "permanent": true
+    },
+    {
+      "source": "/tag/:slug(agenda-di-settore|eventi|fiere|klimahouse|saie)",
+      "destination": "/categoria/eventi",
+      "permanent": true
+    },
+    {
+      "source": "/tag/:slug(automazione-casa|bim|cantiere-4-0|cantiere-digitale|cantieri-4-0|computer-vision|digitalizzazione|domotica|droni|impianti|innovazione|intelligenza-artificiale|nuove-costruzioni|pompe-di-calore|ristrutturazione|robotica-edile|sicurezza-predittiva|smart-home|software)",
+      "destination": "/categoria/innovazione",
+      "permanent": true
+    },
+    {
+      "source": "/tag/:slug(alluminio|cappotto-termico|coperture|efficienza-energetica|impermeabilizzazione|infissi|isolanti|legno|materiali|pvc|riqualificazione|serramenti|tetti|tetto-verde)",
+      "destination": "/categoria/materiali",
+      "permanent": true
+    },
+    {
+      "source": "/tag/:slug(acciaio|agenzia-di-lead-generation-b2b|carenza-manodopera|cemento|citta|costo-costruzioni|fatturato-edilizia|filiera-edile|formazione|formazione-tecnica|imprese-di-costruzioni|investimenti|lavoro-edilizia|mercato|mercato-costruzioni|mercato-edilizia|mercato-immobiliare|occupazione-edile|off-site|organizzazione-commerciale|osservatorio-costruzioni|pmi-edili|prezzi-materiali|produzione-edilizia|professioni-edili|rendita-immobiliare|revisione-prezzi|scenari-di-settore|specializzazioni|trend|ufficio-commerciale-impresa-edile)",
+      "destination": "/categoria/mercato",
+      "permanent": true
+    },
+    {
+      "source": "/tag/:slug(abuso-edilizio|agenzia-delle-entrate|balconi|bonus-casa|bonus-edilizi|bonus-ristrutturazioni|cessione-crediti|chiusure-perimetrali|decreto-ingiuntivo|decreto-salva-casa|detrazioni-2026|detrazioni-fiscali|diffida-ad-adempiere|ecobonus|edilizia-libera|fisco-edilizia|recupero-crediti-edilizia|riqualificazione-energetica|ristrutturazioni|sal-non-pagato-cosa-fare|sanatoria-edilizia|semplificazione-edilizia|sismabonus|superbonus|titoli-abilitativi|titoli-edilizi|tolleranze-costruttive|verande)",
+      "destination": "/categoria/normativa-bonus",
+      "permanent": true
+    },
+    {
+      "source": "/tag/:slug(abitare-accessibile|adeguamento-antisismico|aree-dismesse|cantieri|cantieri-citta|casa-da-ristrutturare|cohousing|compravendita|due-diligence|edilizia-scolastica|finanziamenti-comuni|fondi-pnrr|gestione-commessa|housing-sociale|imprese-edili|nuove-scuole|preventivi|rigenerazione-urbana|rogito|scali-ferroviari|scuole-sicure|student-housing|urbanistica|verifiche-tecniche)",
+      "destination": "/categoria/progetti",
+      "permanent": true
+    },
+    {
+      "source": "/tag/:slug(adempimenti|d-lgs-81-08|prevenzione|sicurezza)",
+      "destination": "/categoria/sicurezza",
+      "permanent": true
+    },
+    {
+      "source": "/tag/:slug(bioedilizia|cappotto|case-green|case-in-legno|condominio|costruzioni-sostenibili|direttiva-case-green|economia-circolare|edifici-a-emissioni-zero|edilizia-in-legno|epbd|fotovoltaico|isolanti-naturali|legno-strutturale|materiali-sostenibili|recepimento-italia|xlam)",
+      "destination": "/categoria/sostenibilita",
+      "permanent": true
+    },
+    {
+      "source": "/tag/:path*",
+      "destination": "/archivio",
+      "permanent": true
     }
   ],
   "headers": [

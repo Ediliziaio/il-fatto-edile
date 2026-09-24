@@ -1,7 +1,7 @@
 import { renderInline } from '@/lib/inline';
 import { Link, useParams } from 'react-router';
 import { Fragment } from 'react';
-import { ARTICLES, SITE, categoryLabel, getArticle, relatedArticles, slugifyTag } from '@/data/articles';
+import { ARTICLES, SITE, categoryLabel, getArticle, relatedArticles } from '@/data/articles';
 import { articleJsonLd, coverUrl, formatDate, useSeo } from '@/lib/seo';
 import type { Block } from '@/types/article';
 import AdSlot from '@/components/AdSlot';
@@ -206,16 +206,15 @@ export default function ArticlePage() {
             </div>
           </section>
 
-          {/* tag */}
+          {/* tag: etichette editoriali, non link (nessuna pagina tag da crawlare) */}
           <div className="mt-8 flex flex-wrap gap-2" aria-label="Tag">
             {article.tags.map((t) => (
-              <Link
+              <span
                 key={t}
-                to={`/tag/${slugifyTag(t)}`}
-                className="border border-neutral-300 px-3 py-1 font-sans text-xs uppercase tracking-wider text-neutral-600 hover:border-red-700 hover:text-red-700"
+                className="border border-neutral-300 px-3 py-1 font-sans text-xs uppercase tracking-wider text-neutral-600"
               >
                 #{t}
-              </Link>
+              </span>
             ))}
           </div>
 

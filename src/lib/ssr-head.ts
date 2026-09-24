@@ -1,13 +1,10 @@
-import { ARTICLES, CATEGORIES, SITE, TAGS, getArticle, getTag } from '@/data/articles';
+import { ARTICLES, CATEGORIES, SITE, getArticle } from '@/data/articles';
 import { articleJsonLd, coverUrl } from '@/lib/seo';
 import { checklistJsonLd, totalChecklistPoints } from '@/lib/checklist';
 import { questionsJsonLd, totalQuestions } from '@/lib/questions';
 import type { ArticleFormat } from '@/types/article';
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
-
-/** soglia minima di articoli perché una pagina tag sia indicizzabile (sotto = thin, noindex) */
-export const TAG_INDEX_MIN = 3;
 
 interface HeadInput {
   title: string;
@@ -135,20 +132,6 @@ export function headFor(url: string): string {
     }
   }
 
-  const tagMatch = path.match(/^\/tag\/(.+)$/);
-  if (tagMatch) {
-    const t = getTag(tagMatch[1]);
-    if (t) {
-      return renderHead({
-        title: `${t.label}: articoli e guide | ${SITE.name}`,
-        description: `Tutti gli articoli de Il Fatto Edile sul tema ${t.label}: guide, classifiche e notizie dal mondo dell\u2019edilizia.`,
-        canonical: `${SITE.domain}/tag/${t.slug}`,
-        // tag con pochi articoli = pagina thin: fuori dall'indice, ma crawlabile (follow)
-        noindex: t.articles.length < TAG_INDEX_MIN,
-      });
-    }
-  }
-
   const format = (['top5', 'top10', 'news'] as ArticleFormat[]).find((f) => FORMAT_META[f].path === path);
   if (format) {
     const m = FORMAT_META[format];
@@ -217,7 +200,6 @@ export const ROUTES: string[] = [
   ...(['top5', 'top10', 'news'] as ArticleFormat[]).map((f) => FORMAT_META[f].path),
   ...CATEGORIES.map((c) => `/categoria/${c.slug}`),
   ...ARTICLES.map((a) => `/articolo/${a.slug}`),
-  ...TAGS.map((t) => `/tag/${t.slug}`),
   '/archivio',
   '/checklist',
   '/domande',
@@ -259,10 +241,6 @@ export function sitemapEntries(today: string): SitemapEntry[] {
       changefreq: 'weekly',
       priority: '0.8',
     });
-  }
-  // solo i tag "forti" (indicizzabili): gli altri sono noindex e NON vanno in sitemap
-  for (const t of TAGS.filter((t) => t.articles.length >= TAG_INDEX_MIN)) {
-    entries.push({ loc: abs(`/tag/${t.slug}`), lastmod: today, changefreq: 'monthly', priority: '0.5' });
   }
   // pagine istituzionali (E-E-A-T / trust): utili in indice
   entries.push({ loc: abs('/chi-siamo'), lastmod: today, changefreq: 'monthly', priority: '0.4' });

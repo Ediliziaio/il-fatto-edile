@@ -14,7 +14,6 @@ const PrivacyPage = lazy(() => import('@/pages/LegalPages').then((m) => ({ defau
 const CookiePolicyPage = lazy(() => import('@/pages/LegalPages').then((m) => ({ default: m.CookiePolicyPage })));
 const ChiSiamoPage = lazy(() => import('@/pages/LegalPages').then((m) => ({ default: m.ChiSiamoPage })));
 const ContattiPage = lazy(() => import('@/pages/LegalPages').then((m) => ({ default: m.ContattiPage })));
-const TagPage = lazy(() => import('@/pages/TagSearchPages').then((m) => ({ default: m.TagPage })));
 const SearchPage = lazy(() => import('@/pages/TagSearchPages').then((m) => ({ default: m.SearchPage })));
 const ChecklistPage = lazy(() => import('@/pages/ChecklistPage'));
 const QuestionsPage = lazy(() => import('@/pages/QuestionsPage'));
@@ -45,7 +44,6 @@ export default function App() {
             <Route path="/archivio" element={<ArchivePage />} />
             <Route path="/checklist" element={<ChecklistPage />} />
             <Route path="/domande" element={<QuestionsPage />} />
-            <Route path="/tag/:slug" element={<TagPage />} />
             <Route path="/ricerca" element={<SearchPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/cookie-policy" element={<CookiePolicyPage />} />

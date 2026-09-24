@@ -30,33 +30,10 @@ export const categoryLabel = (slug: CategorySlug) =>
 
 export { CATEGORIES };
 
-// ─── Tag ────────────────────────────────────────────────────────────────────
-
-export const slugifyTag = (t: string) =>
-  t
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
-
-export interface TagInfo {
-  slug: string;
-  label: string;
-  articles: Article[];
-}
-
-const tagMap = new Map<string, TagInfo>();
-for (const a of ARTICLES) {
-  for (const t of a.tags) {
-    const slug = slugifyTag(t);
-    const entry = tagMap.get(slug) ?? { slug, label: t, articles: [] };
-    entry.articles.push(a);
-    tagMap.set(slug, entry);
-  }
-}
-export const TAGS: TagInfo[] = [...tagMap.values()].sort((a, b) => b.articles.length - a.articles.length);
-export const getTag = (slug: string) => tagMap.get(slug);
+// I tag restano etichette editoriali sugli articoli (usate dalla ricerca interna),
+// ma NON generano più pagine: con questo volume di contenuti erano 137 pagine thin
+// in noindex, crawlate e scartate da Google. Gli URL /tag/* sono in 301 sulle
+// categorie (vercel.json).
 
 export const SITE = {
   name: 'Il Fatto Edile',
