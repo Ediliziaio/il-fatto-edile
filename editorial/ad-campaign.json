@@ -1,0 +1,36 @@
+{
+  "campaign": "cantiere-sotto-controllo",
+  "advertiser": "Edilizia in Cloud",
+  "destination": "https://www.ediliziaincloud.com/",
+  "logo": "Official project asset, copied byte-for-byte: edilizia-in-cloud-logo.webp",
+  "logoSHA256": "538b55aaa729cf1c14ddef1aa28177872dcbcefe2875cd73986333c3748fa69d",
+  "creatives": [
+    {
+      "format": "rectangle",
+      "file": "public/images/ads/eic-cantiere-rectangle.webp",
+      "width": 900,
+      "height": 750,
+      "bytes": 101734,
+      "generatedWith": "Built-in image_gen",
+      "prompt": "Italian navy/orange construction campaign. Exact headline: Il cantiere, sotto controllo. Lavori, costi e documenti in un’unica piattaforma. CTA: Scopri la piattaforma. No prices, numeric guarantees, trial claims or invented interface. Edit: remove generated brand row only, preserve all other art; original logo inserted unchanged in the site."
+    },
+    {
+      "format": "vertical",
+      "file": "public/images/ads/eic-cantiere-vertical.webp",
+      "width": 600,
+      "height": 1200,
+      "bytes": 129786,
+      "generatedWith": "Built-in image_gen",
+      "prompt": "Italian navy/orange construction campaign. Exact headline: Il cantiere, sotto controllo. Lavori, costi e documenti in un’unica piattaforma. CTA: Scopri la piattaforma. No prices, numeric guarantees, trial claims or invented interface. Edit: remove generated brand row only, preserve all other art; original logo inserted unchanged in the site."
+    },
+    {
+      "format": "wide",
+      "file": "public/images/ads/eic-cantiere-wide.webp",
+      "width": 1600,
+      "height": 666,
+      "bytes": 210244,
+      "generatedWith": "Built-in image_gen",
+      "prompt": "Italian navy/orange construction campaign. Exact headline: Il cantiere, sotto controllo. Lavori, costi e documenti in un’unica piattaforma. CTA: Scopri la piattaforma. No prices, numeric guarantees, trial claims or invented interface. Edit: remove generated brand row only, preserve all other art; original logo inserted unchanged in the site."
+    }
+  ]
+}
