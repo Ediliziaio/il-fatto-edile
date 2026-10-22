@@ -110,8 +110,8 @@ export function headFor(url: string): string {
     if (a) {
       return renderHead({
         // titoli lunghi restano non-brandizzati per non superare troppo la soglia SERP (~60)
-        title: a.title.length > 55 ? a.title : `${a.title} | ${SITE.name}`,
-        description: a.excerpt,
+        title: a.seoTitle ?? (a.title.length > 55 ? a.title : `${a.title} | ${SITE.name}`),
+        description: a.seoDescription ?? a.excerpt,
         canonical: `${SITE.domain}/articolo/${a.slug}`,
         type: 'article',
         image: coverUrl(a.slug),

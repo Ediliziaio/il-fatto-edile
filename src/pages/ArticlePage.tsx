@@ -77,11 +77,11 @@ export default function ArticlePage() {
   const jsonLd = article ? articleJsonLd(article) : {};
   useSeo({
     title: article
-      ? article.title.length > 55
+      ? article.seoTitle ?? (article.title.length > 55
         ? article.title
-        : `${article.title} | ${SITE.name}`
+        : `${article.title} | ${SITE.name}`)
       : `Articolo non trovato | ${SITE.name}`,
-    description: article ? article.excerpt : 'L\u2019articolo richiesto non è disponibile.',
+    description: article ? article.seoDescription ?? article.excerpt : 'L\u2019articolo richiesto non è disponibile.',
     canonical: article ? `${SITE.domain}/articolo/${article.slug}` : SITE.domain,
     type: 'article',
     image: article ? coverUrl(article.slug) : undefined,
