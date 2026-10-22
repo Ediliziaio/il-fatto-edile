@@ -14,3 +14,4 @@ dist-ssr/
 # editor
 .vscode/
 .idea/
+/editorial/drafts/

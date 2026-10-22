@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Software BIM per l’impresa: la prova da chiedere prima di scegliere",
+    "description": "Una prova con modello IFC, quantità e revisione del progetto per capire se un software BIM serve davvero all’impresa, oltre la demo commerciale.",
+    "path": "/guide-pratiche/software-bim-prova-modello-computo-impresa",
+    "section": "guide-pratiche",
+    "slug": "software-bim-prova-modello-computo-impresa",
+    "publishedAt": "2026-10-22T07:18:01Z",
+    "image": "/editorial-assets/software-bim-prova-modello-computo-impresa.webp",
+    "sponsor": null,
+    "sourceURLs": [
+      "https://www.buildingsmart.org/compliance/software-certification/?mdrv=www.buildingsmart.org",
+      "https://www.buildingsmart.org/compliance/use-case-certification/"
+    ]
+  },
+  {
+    "title": "Renova Solution: trasformare il budget di casa in scelte riconoscibili",
+    "description": "Una soluzione di base e alternative separate: come preparare il confronto con Renova Solution evitando di mescolare priorità e desideri.",
+    "path": "/speciali-aziende/renova-solution-trasformare-il-budget-di-casa-in-scelte-riconoscibili",
+    "section": "speciali-aziende",
+    "slug": "renova-solution-trasformare-il-budget-di-casa-in-scelte-riconoscibili",
+    "publishedAt": "2026-10-22T07:18:01Z",
+    "image": "/editorial-assets/renova-solution.webp",
+    "sponsor": "Renova Solution",
+    "sourceURLs": [
+      "https://www.renovasolution.it/"
+    ]
+  },
+  {
+    "title": "Innovasol: valutare un impianto pensando a chi lo gestirà",
+    "description": "Utenti, istruzioni e riferimenti: le domande sul dopo-installazione da aggiungere alla richiesta di un servizio energetico Innovasol.",
+    "path": "/speciali-aziende/innovasol-valutare-un-impianto-pensando-a-chi-lo-gestira",
+    "section": "speciali-aziende",
+    "slug": "innovasol-valutare-un-impianto-pensando-a-chi-lo-gestira",
+    "publishedAt": "2026-10-22T07:18:01Z",
+    "image": "/editorial-assets/innovasol.webp",
+    "sponsor": "Innovasol",
+    "sourceURLs": [
+      "https://innovasol.it/"
+    ]
+  },
+  {
+    "title": "Green Energy Group: preparare una decisione energetica condivisa in azienda",
+    "description": "Referenti, dati e scenari: una scheda per discutere il progetto fotovoltaico con Green Energy Group prima della decisione d’investimento.",
+    "path": "/speciali-aziende/green-energy-group-preparare-una-decisione-energetica-condivisa-in-azienda",
+    "section": "speciali-aziende",
+    "slug": "green-energy-group-preparare-una-decisione-energetica-condivisa-in-azienda",
+    "publishedAt": "2026-10-22T07:18:01Z",
+    "image": "/editorial-assets/green-energy-group.webp",
+    "sponsor": "Green Energy Group",
+    "sourceURLs": [
+      "https://greenenergygroup.it/",
+      "https://greenenergygroup.it/fotovoltaico/"
+    ]
+  }
+]
