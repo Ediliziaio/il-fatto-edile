@@ -4,6 +4,36 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/guide-pratiche/software-bim-prova-modello-computo-impresa",
+      "destination": "/articolo/software-bim-prova-modello-computo-impresa",
+      "permanent": true
+    },
+    {
+      "source": "/speciali-aziende/renova-solution-trasformare-il-budget-di-casa-in-scelte-riconoscibili",
+      "destination": "/articolo/renova-solution-trasformare-il-budget-di-casa-in-scelte-riconoscibili",
+      "permanent": true
+    },
+    {
+      "source": "/speciali-aziende/innovasol-valutare-un-impianto-pensando-a-chi-lo-gestira",
+      "destination": "/articolo/innovasol-valutare-un-impianto-pensando-a-chi-lo-gestira",
+      "permanent": true
+    },
+    {
+      "source": "/speciali-aziende/green-energy-group-preparare-una-decisione-energetica-condivisa-in-azienda",
+      "destination": "/articolo/green-energy-group-preparare-una-decisione-energetica-condivisa-in-azienda",
+      "permanent": true
+    },
+    {
+      "source": "/guide-pratiche",
+      "destination": "/categoria/innovazione",
+      "permanent": true
+    },
+    {
+      "source": "/speciali-aziende",
+      "destination": "/categoria/innovazione",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {

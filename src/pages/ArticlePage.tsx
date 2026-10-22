@@ -91,7 +91,8 @@ export default function ArticlePage() {
   if (!article) {
     return (
       <main className="mx-auto max-w-3xl px-4 py-24 text-center">
-        <h1 className="font-serif text-3xl font-black">Articolo non trovato</h1>
+
+            <h1 className="font-serif text-3xl font-black">Articolo non trovato</h1>
         <Link to="/" className="mt-4 inline-block font-sans text-sm font-bold text-red-700 hover:underline">← Torna alla home</Link>
       </main>
     );
@@ -124,7 +125,8 @@ export default function ArticlePage() {
             <span className="font-sans text-xs font-bold uppercase tracking-[0.2em] text-red-700">
               {categoryLabel(article.category)}
             </span>
-            <h1 itemProp="headline" className="mt-2 font-serif text-3xl font-black leading-tight text-neutral-950 md:text-[42px] md:leading-[1.15]">
+            {article?.sponsor && <p className="my-3 font-sans text-xs font-bold uppercase tracking-wide" role="note">Contenuto sponsorizzato · {article.sponsor}</p>}
+<h1 itemProp="headline" className="mt-2 font-serif text-3xl font-black leading-tight text-neutral-950 md:text-[42px] md:leading-[1.15]">
               {article.title}
             </h1>
             <p itemProp="description" className="mt-4 font-body text-xl leading-relaxed text-neutral-600">
@@ -192,7 +194,8 @@ export default function ArticlePage() {
           </div>
 
           {/* FAQ — AEO / rich results */}
-          <section aria-label="Domande frequenti" className="mt-12 border-t-2 border-neutral-950 pt-6">
+          {article.faq.length > 0 && (
+<section aria-label="Domande frequenti" className="mt-12 border-t-2 border-neutral-950 pt-6">
             <h2 className="font-serif text-2xl font-black text-neutral-950">Domande frequenti</h2>
             <div className="mt-4 divide-y divide-neutral-200">
               {article.faq.map((f, i) => (
@@ -205,6 +208,7 @@ export default function ArticlePage() {
               ))}
             </div>
           </section>
+)}
 
           {/* tag: etichette editoriali, non link (nessuna pagina tag da crawlare) */}
           <div className="mt-8 flex flex-wrap gap-2" aria-label="Tag">

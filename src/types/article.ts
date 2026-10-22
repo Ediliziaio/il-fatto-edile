@@ -44,6 +44,8 @@ export interface FaqItem {
 }
 
 export interface Article {
+  /** Paid editorial feature; always visibly disclosed. */
+  sponsor?: string | null;
   slug: string;
   title: string;
   /** meta description, max ~160 caratteri */

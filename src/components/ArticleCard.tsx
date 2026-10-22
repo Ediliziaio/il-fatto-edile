@@ -34,7 +34,8 @@ export default function ArticleCard({
             <span className="font-sans text-[10px] font-bold uppercase tracking-[0.15em] text-red-700">
               {categoryLabel(a.category)}
             </span>
-            <h3 className="mt-0.5 font-serif text-[15px] font-bold leading-snug text-neutral-900 group-hover:underline">
+            {a.sponsor && <p className="mb-1 font-sans text-[10px] font-bold uppercase tracking-wide">Contenuto sponsorizzato · {a.sponsor}</p>}
+          <h3 className="mt-0.5 font-serif text-[15px] font-bold leading-snug text-neutral-900 group-hover:underline">
               {a.title}
             </h3>
           </Link>
@@ -55,7 +56,8 @@ export default function ArticleCard({
             <span className="font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-red-700">
               {categoryLabel(a.category)}
             </span>
-            <h2 className="mt-1 font-serif text-3xl font-black leading-tight text-neutral-950 group-hover:underline md:text-4xl">
+            {a.sponsor && <p className="mb-1 font-sans text-[10px] font-bold uppercase tracking-wide">Contenuto sponsorizzato · {a.sponsor}</p>}
+          <h2 className="mt-1 font-serif text-3xl font-black leading-tight text-neutral-950 group-hover:underline md:text-4xl">
               {a.title}
             </h2>
             <p className="mt-2 max-w-3xl font-body text-[17px] leading-relaxed text-neutral-600">{a.excerpt}</p>
@@ -79,6 +81,7 @@ export default function ArticleCard({
           {categoryLabel(a.category)}
         </span>
         <Link to={url}>
+          {a.sponsor && <p className="mb-1 font-sans text-[10px] font-bold uppercase tracking-wide">Contenuto sponsorizzato · {a.sponsor}</p>}
           <h3 className="mt-1 font-serif text-lg font-bold leading-snug text-neutral-900 group-hover:underline">
             {a.title}
           </h3>

@@ -21,7 +21,7 @@ export function renderInline(text: string): ReactNode {
         <a
           key={key++}
           href={m[2]}
-          {...(external ? { target: '_blank', rel: m[3] === 'sponsored' ? 'sponsored noopener' : 'noopener' } : {})}
+          {...(external ? { target: '_blank', rel: m[3] === 'sponsored' ? 'sponsored nofollow noopener noreferrer' : 'noopener' } : {})}
           className="font-semibold text-red-700 underline underline-offset-2 hover:text-neutral-950"
         >
           {m[1]}
