@@ -17,9 +17,9 @@ function SectionTitle({ title, to }: { title: string; to: string }) {
 
 export default function Home() {
   useSeo({
-    title: `${SITE.name} — Imprese, professioni e politiche delle costruzioni`,
+    title: `${SITE.name} — Checklist e pratica di cantiere`,
     description: SITE.metaDescription,
-    canonical: SITE.domain,
+    canonical: SITE.domain + "/",
     jsonLd: {
       itemlist: {
         '@context': 'https://schema.org',
