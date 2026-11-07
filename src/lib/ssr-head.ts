@@ -16,7 +16,7 @@ interface HeadInput {
   noindex?: boolean;
 }
 
-function renderHead({ title, description, canonical, type = 'website', image, jsonLd, noindex }: HeadInput) {
+function renderHead({ title, description, canonical, type = 'website', image = `${SITE.domain}/images/og-default.png`, jsonLd, noindex }: HeadInput) {
   const tags: string[] = [
     `<title>${esc(title)}</title>`,
     `<meta name="robots" content="${noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1'}" />`,
@@ -31,6 +31,11 @@ function renderHead({ title, description, canonical, type = 'website', image, js
   ];
   if (image) {
     tags.push(`<meta property="og:image" content="${esc(image)}" />`);
+    tags.push(`<meta property="og:image:alt" content="${esc(title)}" />`);
+    if (image.endsWith('/images/og-default.png')) {
+      tags.push('<meta property="og:image:width" content="1200" />');
+      tags.push('<meta property="og:image:height" content="630" />');
+    }
     tags.push(`<meta name="twitter:image" content="${esc(image)}" />`);
   }
   if (jsonLd) {
@@ -88,7 +93,7 @@ export function headFor(url: string): string {
       title: `${SITE.name} — Checklist e pratica di cantiere`,
       description: SITE.metaDescription,
       canonical: SITE.domain + '/',
-      image: `${SITE.domain}/images/logo.png`,
+      image: `${SITE.domain}/images/og-default.png`,
       jsonLd: {
         itemlist: {
           '@context': 'https://schema.org',

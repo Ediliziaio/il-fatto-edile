@@ -37,7 +37,7 @@ interface SeoInput {
   noindex?: boolean;
 }
 
-export function useSeo({ title, description, canonical, type = 'website', image, jsonLd, noindex }: SeoInput) {
+export function useSeo({ title, description, canonical, type = 'website', image = `${SITE.domain}/images/og-default.png`, jsonLd, noindex }: SeoInput) {
   useEffect(() => {
     document.title = title;
     setMeta('name', 'robots', noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1');
@@ -46,7 +46,16 @@ export function useSeo({ title, description, canonical, type = 'website', image,
     setMeta('property', 'og:description', description);
     setMeta('property', 'og:url', canonical);
     setMeta('property', 'og:type', type);
-    if (image) setMeta('property', 'og:image', image);
+    if (image) {
+      setMeta('property', 'og:image', image);
+      setMeta('property', 'og:image:alt', title);
+      if (image.endsWith('/images/og-default.png')) {
+        setMeta('property', 'og:image:width', '1200');
+        setMeta('property', 'og:image:height', '630');
+      } else {
+        document.head.querySelectorAll('meta[property="og:image:width"],meta[property="og:image:height"]').forEach(el => el.remove());
+      }
+    }
     setMeta('name', 'twitter:title', title);
     setMeta('name', 'twitter:description', description);
     if (image) setMeta('name', 'twitter:image', image);
