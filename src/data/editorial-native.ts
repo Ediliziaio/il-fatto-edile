@@ -1,5 +1,238 @@
 import type { Article } from "@/types/article";
 export const editorialNative: Article[] = [
+{
+  "slug": "rapportino-fotografico-cantiere-organizzare",
+  "title": "Rapportino fotografico di cantiere: come rendere le immagini comprensibili e ritrovabili",
+  "seoTitle": "Rapportino fotografico cantiere: guida pratica",
+  "seoDescription": "Organizza il rapportino fotografico di cantiere con luoghi, date, fasi e azioni da verificare. Esempio di registro, nomi file e controllo delle revisioni.",
+  "excerpt": "Organizza il rapportino fotografico di cantiere con luoghi, date, fasi e azioni da verificare. Esempio di registro, nomi file e controllo delle revisioni.",
+  "format": "news",
+  "category": "progetti",
+  "tags": [
+    "cantieri",
+    "documentazione"
+  ],
+  "author": "Redazione Il Fatto Edile",
+  "authorRole": "Redazione",
+  "publishedAt": "2026-11-07",
+  "updatedAt": "2026-11-07",
+  "readingTime": 7,
+  "coverTheme": "blueprint",
+  "coverAlt": "Schema illustrativo: Rapportino fotografico cantiere: guida pratica",
+  "keywords": [
+    "rapportino fotografico cantiere"
+  ],
+  "keyPoints": [
+    "Collega immagini, luogo e fase del lavoro.",
+    "Distingui osservazioni, richieste di verifica e riscontri.",
+    "Conserva originali e cronologia delle revisioni."
+  ],
+  "faq": [
+    {
+      "q": "Una fotografia dimostra da sola che una lavorazione è corretta?",
+      "a": "No. Può documentare ciò che era visibile, ma la valutazione richiede i controlli pertinenti e i soggetti competenti. Una didascalia non sostituisce certificazioni o approvazioni previste."
+    },
+    {
+      "q": "Posso usare soltanto una chat per il rapportino?",
+      "a": "Una chat può veicolare immagini, ma devi poter ricostruire identificativi, luoghi, stati e riscontri. Se queste informazioni si perdono nel flusso dei messaggi, serve un registro collegato più stabile."
+    },
+    {
+      "q": "Devo cancellare le foto precedenti quando il punto viene chiuso?",
+      "a": "È preferibile mantenere la cronologia secondo le procedure del progetto. Collega il riscontro e le nuove immagini, distinguendo originali e copie annotate, così il percorso rimane ricostruibile."
+    }
+  ],
+  "content": [
+    {
+      "type": "p",
+      "text": "Una cartella con centinaia di fotografie non è ancora un rapportino fotografico di cantiere. Le immagini diventano utilizzabili quando chi le consulta riesce a capire dove sono state scattate, che cosa mostrano e quale domanda devono aiutare a risolvere. Senza questo contesto, anche una foto nitida può richiedere una telefonata per essere interpretata."
+    },
+    {
+      "type": "p",
+      "text": "Questa guida propone un metodo organizzativo per documentare osservazioni e passaggi di lavoro. Non attribuisce alle fotografie il valore automatico di certificazioni, collaudi o documenti ufficiali. Il registro fotografico può affiancare il sistema documentale previsto per il cantiere, rispettandone ruoli e procedure."
+    },
+    {
+      "type": "h2",
+      "text": "Definire lo scopo prima di scattare"
+    },
+    {
+      "type": "p",
+      "text": "Un’immagine può servire a descrivere un avanzamento, documentare una condizione prima di una lavorazione o accompagnare una richiesta di verifica. Sono scopi differenti. Dichiararli nel rapportino aiuta a scegliere inquadratura, dettaglio e informazioni da raccogliere."
+    },
+    {
+      "type": "p",
+      "text": "Non fotografare tutto senza un criterio sperando di ordinare le immagini alla fine. Prepara invece un elenco dei punti da osservare, collegato alle attività e alle zone interessate. Il programma deve essere condiviso con chi gestisce il lavoro, senza improvvisare accessi o interferire con le attività."
+    },
+    {
+      "type": "p",
+      "text": "Il registro deve distinguere ciò che è visibile da ciò che viene ipotizzato. “Tubo visibile sulla parete indicata” è un’osservazione; una conclusione sulla corretta esecuzione richiede le verifiche pertinenti. La didascalia non deve trasformarsi in una certificazione formulata da chi non ha quel ruolo."
+    },
+    {
+      "type": "h2",
+      "text": "Identificare luogo e fase del lavoro"
+    },
+    {
+      "type": "p",
+      "text": "Usa una codifica comprensibile delle aree. Può derivare da edificio, piano, ambiente e posizione, oppure dal sistema già utilizzato nel progetto. Evita codici personali che solo il fotografo riesce a interpretare."
+    },
+    {
+      "type": "p",
+      "text": "La fase deve essere descritta con parole concrete. “Prima della chiusura” è più utile se indica quale elemento verrà chiuso e a quale lavorazione si riferisce. Quando esiste un disegno, collega la foto al relativo riferimento e alla revisione disponibile."
+    },
+    {
+      "type": "p",
+      "text": "Se il cantiere dispone di un sistema digitale per segnalazioni o verifiche, riutilizza gli identificativi già presenti. Un secondo elenco scollegato crea lavoro di riconciliazione e aumenta il rischio di trattare la stessa osservazione come due questioni diverse."
+    },
+    {
+      "type": "h2",
+      "text": "Tre livelli di inquadratura"
+    },
+    {
+      "type": "p",
+      "text": "Una sequenza utile può comprendere contesto, elemento e dettaglio. La prima immagine permette di riconoscere il luogo, la seconda il componente interessato, la terza ciò che si vuole mostrare. Non è un obbligo universale: è un criterio da adattare allo scopo del registro."
+    },
+    {
+      "type": "p",
+      "text": "Mantieni il riferimento fra le immagini della stessa osservazione. Se invii soltanto il dettaglio in una chat, chi riceve potrebbe non riconoscere la parete o l’ambiente. Il collegamento al gruppo completo evita ricostruzioni basate su indizi visivi."
+    },
+    {
+      "type": "p",
+      "text": "Non ricavare misure affidabili da una prospettiva casuale. Se il compito richiede un rilievo, servono metodo e strumenti pertinenti. Una fotografia può documentare un’indicazione o accompagnare un elaborato, ma non sostituisce automaticamente la misurazione prevista."
+    },
+    {
+      "type": "h2",
+      "text": "La struttura del rapportino"
+    },
+    {
+      "type": "p",
+      "text": "Ogni osservazione dovrebbe essere rintracciabile e avere uno stato comprensibile. Usa campi brevi e costanti, lasciando visibili le informazioni mancanti. Il registro deve aiutare chi controlla, non obbligarlo a leggere una narrazione diversa per ogni riga."
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Campo",
+        "Esempio illustrativo",
+        "Funzione"
+      ],
+      "rows": [
+        [
+          "Identificativo",
+          "RF-014",
+          "Collega immagini e commenti"
+        ],
+        [
+          "Zona",
+          "Piano 1, ambiente A03",
+          "Localizza l’osservazione"
+        ],
+        [
+          "Fase",
+          "Prima della chiusura del vano",
+          "Descrive il momento"
+        ],
+        [
+          "Foto",
+          "RF-014-01 e RF-014-02",
+          "Rimanda ai file"
+        ],
+        [
+          "Osservazione",
+          "Elemento visibile da verificare",
+          "Separa fatto e giudizio"
+        ],
+        [
+          "Referente",
+          "Soggetto incaricato del riscontro",
+          "Assegna il passaggio successivo"
+        ],
+        [
+          "Stato",
+          "In attesa di verifica",
+          "Evita chiusure implicite"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "I dati della tabella sono inventati per spiegare il metodo e non descrivono un cantiere reale. Nel registro effettivo usa i riferimenti del progetto e le procedure condivise dagli operatori coinvolti."
+    },
+    {
+      "type": "h2",
+      "text": "Nomi dei file e organizzazione delle cartelle"
+    },
+    {
+      "type": "p",
+      "text": "Un nome file utile può comprendere data, zona, identificativo e progressivo. Mantieni una convenzione stabile e documentala in poche righe. Non è necessario inserire ogni informazione nel nome: i dettagli più articolati possono vivere nel registro collegato."
+    },
+    {
+      "type": "p",
+      "text": "Conserva gli originali e distingui le copie annotate. Se aggiungi frecce o evidenziazioni per spiegare un punto, indica che si tratta di una versione commentata e mantieni il collegamento all’immagine di partenza. Le annotazioni devono chiarire l’osservazione, senza alterare ciò che viene rappresentato."
+    },
+    {
+      "type": "p",
+      "text": "Evita cartelle chiamate soltanto “varie”, “nuove” o “ultime”. La loro utilità diminuisce rapidamente quando cambiano gli operatori o passa del tempo. La struttura deve poter essere capita da una persona che non ha partecipato alla conversazione iniziale."
+    },
+    {
+      "type": "h2",
+      "text": "Un esempio di passaggio fra osservazione e riscontro"
+    },
+    {
+      "type": "p",
+      "text": "Immagina che una foto mostri un punto che richiede un controllo prima della fase successiva. Il rapportino registra luogo, immagine e domanda, poi assegna il riscontro al referente previsto. Lo stato rimane aperto finché non arriva l’informazione necessaria."
+    },
+    {
+      "type": "p",
+      "text": "Quando il referente risponde, collega il documento o il commento e indica la data. Se viene eseguito un intervento, aggiungi le immagini successive senza cancellare quelle precedenti. La chiusura deve essere motivata dal passaggio concordato, non dal fatto che qualcuno abbia smesso di parlarne."
+    },
+    {
+      "type": "p",
+      "text": "L’esempio non stabilisce chi debba approvare una lavorazione nel tuo cantiere. Questo dipende dall’organizzazione e dai documenti pertinenti. Il metodo rende visibile il percorso, così una richiesta non si perde fra foto e messaggi separati."
+    },
+    {
+      "type": "h2",
+      "text": "Collegare fotografie, elaborati e attività"
+    },
+    {
+      "type": "p",
+      "text": "Una fotografia è più utile quando rimanda al contesto del lavoro. Puoi collegarla a una tavola, a un elemento del modello o a una voce di verifica, se il sistema del progetto lo consente. Mantieni sempre il riferimento alla revisione corretta."
+    },
+    {
+      "type": "p",
+      "text": "Nei processi digitali esistono strutture dedicate a temi, commenti e punti di vista. La documentazione di [buildingSMART sul BCF](https://github.com/buildingSMART/BCF-API/blob/release_3_0/README.md) offre un riferimento per comprendere questo tipo di scambio. Non occorre adottare un formato complesso per ogni piccola commessa: conta applicare una logica coerente di identificazione e collegamento."
+    },
+    {
+      "type": "p",
+      "text": "La guida su [come provare un software BIM sul modello e sul computo dell’impresa](/articolo/software-bim-prova-modello-computo-impresa) aiuta a valutare gli strumenti partendo da un processo concreto. Il software dovrebbe sostenere il lavoro da eseguire, non creare un archivio parallelo che nessuno aggiorna."
+    },
+    {
+      "type": "h2",
+      "text": "Accesso, condivisione e informazioni non necessarie"
+    },
+    {
+      "type": "p",
+      "text": "Definisci chi può consultare, aggiungere e modificare il registro. Le copie inviate fuori dal sistema principale devono restare riconoscibili, altrimenti una risposta può finire in una versione che gli altri non vedono."
+    },
+    {
+      "type": "p",
+      "text": "Raccogli soltanto le informazioni pertinenti allo scopo. Quando prepari immagini per una condivisione più ampia, verifica con il responsabile del processo come gestire persone riconoscibili, documenti visibili e altri elementi estranei alla verifica. Le esigenze del registro interno e quelle di una pubblicazione promozionale sono differenti."
+    },
+    {
+      "type": "p",
+      "text": "Non utilizzare automaticamente il rapportino come portfolio pubblico. La selezione delle immagini per la comunicazione richiede un passaggio dedicato, con verifiche sui contenuti e sulle autorizzazioni pertinenti al caso."
+    },
+    {
+      "type": "h2",
+      "text": "Controllare che il sistema funzioni"
+    },
+    {
+      "type": "p",
+      "text": "Prova a recuperare una singola osservazione senza chiedere aiuto al suo autore. Se riesci a trovare luogo, foto, domanda e riscontro, la struttura è leggibile. Se serve una telefonata per ogni campo, chiarisci nomi e collegamenti prima di aggiungere altre funzioni."
+    },
+    {
+      "type": "p",
+      "text": "Nell’area [checklist](/checklist) trovi altri percorsi operativi; nella sezione [domande](/domande) puoi approfondire i dubbi ricorrenti. Usa questi strumenti per preparare il tuo metodo, mantenendo il sistema documentale del cantiere come riferimento."
+    }
+  ]
+},
   {
     "slug": "software-bim-prova-modello-computo-impresa",
     "title": "Software BIM per l’impresa: la prova da chiedere prima di scegliere",
