@@ -1,5 +1,242 @@
 import type { Article } from "@/types/article";
 export const editorialNative: Article[] = [
+{
+  "slug": "registro-punti-aperti-cantiere-verifiche",
+  "title": "Registro dei punti aperti in cantiere: dalle osservazioni alla verifica di chiusura",
+  "seoTitle": "Punti aperti cantiere: registro e verifiche",
+  "seoDescription": "Organizza i punti aperti di cantiere con luogo, referente, riscontro e stato. Un metodo per distinguere richiesta, intervento e verifica di chiusura.",
+  "excerpt": "Organizza i punti aperti di cantiere con luogo, referente, riscontro e stato. Un metodo per distinguere richiesta, intervento e verifica di chiusura.",
+  "format": "news",
+  "category": "progetti",
+  "tags": [
+    "cantieri",
+    "documentazione"
+  ],
+  "author": "Redazione Il Fatto Edile",
+  "authorRole": "Redazione",
+  "publishedAt": "2026-11-08",
+  "updatedAt": "2026-11-08",
+  "readingTime": 7,
+  "coverTheme": "blueprint",
+  "coverAlt": "Schema illustrativo: Punti aperti cantiere: registro e verifiche",
+  "keywords": [
+    "punti aperti cantiere"
+  ],
+  "keyPoints": [
+    "Identifica luogo, tema e referente del punto aperto.",
+    "Separa intervento dichiarato e verifica di chiusura.",
+    "Mantieni riscontri e cronologia recuperabili."
+  ],
+  "faq": [
+    {
+      "q": "Una fotografia successiva permette di chiudere automaticamente un punto?",
+      "a": "No. Può essere un riscontro, ma la chiusura deve seguire il criterio previsto dal processo e le verifiche pertinenti. Occorre distinguere documentazione ricevuta e valutazione finale."
+    },
+    {
+      "q": "Chi deve essere indicato come referente?",
+      "a": "Il campo deve rendere riconoscibile il soggetto del prossimo passaggio secondo l’organizzazione del progetto. Non attribuisce da solo responsabilità tecniche o contrattuali ulteriori."
+    },
+    {
+      "q": "Devo cancellare i punti chiusi dal registro?",
+      "a": "È utile mantenerne una cronologia recuperabile secondo le procedure del progetto. Puoi separarli nella vista operativa, conservando riferimenti e riscontri che permettono di ricostruire il percorso."
+    }
+  ],
+  "content": [
+    {
+      "type": "p",
+      "text": "Un elenco di cose da sistemare può crescere rapidamente senza rendere più chiaro il cantiere. Alcune righe descrivono osservazioni, altre richieste, altre interventi già dichiarati conclusi. Un registro dei punti aperti serve a distinguere questi passaggi e a collegare ogni questione al riscontro necessario per valutarne la chiusura."
+    },
+    {
+      "type": "p",
+      "text": "Questa guida propone un metodo organizzativo da adattare al processo del progetto. Il registro non sostituisce verifiche, approvazioni o documenti previsti per il lavoro. Aiuta i referenti a riconoscere che cosa resta aperto, quale informazione manca e chi debba gestire il prossimo passaggio."
+    },
+    {
+      "type": "h2",
+      "text": "Scrivere un punto che un’altra persona possa capire"
+    },
+    {
+      "type": "p",
+      "text": "Ogni riga deve descrivere un tema riconoscibile. Indica luogo, elemento e osservazione, evitando formule generiche come “controllare la stanza”. Chi legge dovrebbe riuscire a individuare il punto senza chiedere al compilatore che cosa intendesse."
+    },
+    {
+      "type": "p",
+      "text": "Se nella stessa riga compaiono questioni indipendenti, valuta se separarle. La consegna di un documento e la verifica di una lavorazione possono avere referenti e percorsi diversi. Un’unica spunta rischia di nascondere che soltanto una parte della richiesta abbia ricevuto risposta."
+    },
+    {
+      "type": "p",
+      "text": "Mantieni il testo concreto e distingui ciò che osservi dalla causa ipotizzata. Una fotografia può mostrare una condizione visibile, mentre la valutazione tecnica richiede i soggetti e i controlli pertinenti. Il titolo del punto non deve trasformare un dubbio in una conclusione già acquisita."
+    },
+    {
+      "type": "h2",
+      "text": "Assegnare un identificativo stabile"
+    },
+    {
+      "type": "p",
+      "text": "Il codice del punto collega descrizione, immagini, comunicazioni e riscontri. Deve rimanere lo stesso anche se cambiano titolo o stato. Puoi utilizzare un progressivo con un prefisso della commessa, purché la convenzione sia condivisa e non produca duplicati."
+    },
+    {
+      "type": "p",
+      "text": "Se il progetto dispone già di un sistema di identificazione, usa quello. Un secondo elenco scollegato può far apparire la stessa questione come due problemi differenti. Quando serve una corrispondenza fra sistemi, conserva un raccordo esplicito."
+    },
+    {
+      "type": "p",
+      "text": "Per le immagini mantieni il legame con il punto e con il luogo. La guida al [rapportino fotografico di cantiere](/articolo/rapportino-fotografico-cantiere-organizzare) descrive come associare contesto, dettaglio e osservazione, invece di affidarsi a una cartella di file senza riferimenti."
+    },
+    {
+      "type": "h2",
+      "text": "Definire stati che descrivano passaggi reali"
+    },
+    {
+      "type": "p",
+      "text": "Uno stato deve chiarire che cosa è avvenuto e che cosa manca. “Aperto” e “chiuso” possono essere sufficienti per un riepilogo, ma spesso non raccontano la fase intermedia: attesa di chiarimento, intervento dichiarato eseguito oppure riscontro da verificare."
+    },
+    {
+      "type": "p",
+      "text": "Prima di adottare molti stati, definisci il significato di ciascuno. Se due persone usano “risolto” per eventi differenti, il colore della casella non produce una situazione condivisa. Associa lo stato al passaggio documentale o operativo pertinente."
+    },
+    {
+      "type": "p",
+      "text": "Mantieni distinguibili l’esecuzione dichiarata e la verifica di chiusura prevista dal processo. Chi comunica di aver svolto un’attività può fornire un riscontro, ma il registro non deve attribuire automaticamente a quella comunicazione un’approvazione che spetta ad altri."
+    },
+    {
+      "type": "h2",
+      "text": "Una scheda essenziale del punto aperto"
+    },
+    {
+      "type": "p",
+      "text": "La struttura deve permettere di passare dalla sintesi al documento collegato. Usa campi brevi, riferimenti recuperabili e una colonna per il passaggio successivo. Non riempire le caselle mancanti con ipotesi che sembrino definitive."
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Campo",
+        "Contenuto",
+        "Utilità"
+      ],
+      "rows": [
+        [
+          "Identificativo",
+          "Codice stabile",
+          "Collega tutte le informazioni"
+        ],
+        [
+          "Luogo",
+          "Area ed elemento interessati",
+          "Localizza il punto"
+        ],
+        [
+          "Osservazione",
+          "Fatto o domanda da esaminare",
+          "Definisce il tema"
+        ],
+        [
+          "Riferimento",
+          "Documento, foto o elaborato",
+          "Conserva il contesto"
+        ],
+        [
+          "Referente",
+          "Soggetto del prossimo passaggio",
+          "Rende chiara l’azione attesa"
+        ],
+        [
+          "Stato",
+          "Condizione effettiva del punto",
+          "Distingue richiesta e verifica"
+        ],
+        [
+          "Riscontro",
+          "Documento o informazione ricevuti",
+          "Sostiene la valutazione finale"
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Il registro funziona come indice. I file originali rimangono disponibili nei percorsi previsti dal progetto; eventuali copie annotate devono essere riconoscibili e collegate alla versione di partenza."
+    },
+    {
+      "type": "h2",
+      "text": "Un esempio illustrativo di percorso"
+    },
+    {
+      "type": "p",
+      "text": "Immagina un punto PA-018 relativo a una condizione osservata prima di una fase successiva. La scheda indica ambiente, immagine contestuale e domanda. Il referente comunica un intervento eseguito e allega un riscontro, mentre il processo prevede ancora una verifica da parte del soggetto incaricato."
+    },
+    {
+      "type": "p",
+      "text": "In quel momento lo stato può descrivere il passaggio effettivo, come “riscontro ricevuto, verifica attesa”. La chiusura verrà registrata sulla base del criterio previsto. Non è la presenza di una nuova fotografia, da sola, a determinare automaticamente l’esito."
+    },
+    {
+      "type": "p",
+      "text": "L’esempio è organizzativo e non riguarda un cantiere reale. Mostra perché la distinzione fra attività dichiarata e verifica possa evitare una chiusura apparente, lasciando riconoscibile chi debba completare il percorso."
+    },
+    {
+      "type": "h2",
+      "text": "Collegare il punto all’attività che ne dipende"
+    },
+    {
+      "type": "p",
+      "text": "Un punto aperto può incidere su una fase del programma o richiedere un documento prima di una decisione. Registra il collegamento, senza trasformarlo in un ordine operativo formulato dal compilatore. Saranno i referenti a valutare le conseguenze secondo l’organizzazione del lavoro."
+    },
+    {
+      "type": "p",
+      "text": "Per le date, distingui esigenza, previsione e riscontro confermato. Una scadenza proposta non equivale automaticamente a un impegno condiviso. Se cambia il programma, aggiorna il riferimento e mantieni una nota comprensibile del cambiamento."
+    },
+    {
+      "type": "p",
+      "text": "La priorità deve aiutare a scegliere il prossimo passaggio. Se ogni riga è classificata come urgente, il registro perde capacità di orientamento. Chiedi che le priorità siano lette insieme alle attività e alle decisioni del cantiere."
+    },
+    {
+      "type": "h2",
+      "text": "Gestire documenti e revisioni"
+    },
+    {
+      "type": "p",
+      "text": "Quando un punto rimanda a un elaborato, conserva il riferimento alla revisione utilizzata. Se il documento cambia, indica quale versione sia collegata al riscontro successivo. Non sostituire il file iniziale senza lasciare traccia del passaggio."
+    },
+    {
+      "type": "p",
+      "text": "Lo stesso criterio vale per i commenti: una precisazione può aggiornare la comprensione del problema, ma non dovrebbe cancellare la domanda che l’ha generata. La cronologia permette di capire perché sia stato richiesto un controllo e quali informazioni siano state disponibili nei diversi momenti."
+    },
+    {
+      "type": "p",
+      "text": "Per valutare gli strumenti digitali puoi partire dalla [prova di un flusso BIM su modello e computo](/articolo/software-bim-prova-modello-computo-impresa). Inserisci nella prova anche un punto aperto completo, così verifichi se riferimenti e riscontri restino recuperabili nel processo reale."
+    },
+    {
+      "type": "h2",
+      "text": "Fare una riunione che aggiorni il registro"
+    },
+    {
+      "type": "p",
+      "text": "Porta alla riunione i punti che richiedono una decisione o un chiarimento, insieme ai documenti necessari. Un riepilogo di soli codici e colori può non bastare a ricostruire il tema. Chi partecipa deve poter riconoscere il luogo, la domanda e il passaggio atteso."
+    },
+    {
+      "type": "p",
+      "text": "Per ogni aggiornamento, annota riscontro e azione successiva. Se una questione non è risolta, chiarisci che cosa manca invece di spostarla semplicemente alla riunione seguente. Il registro deve diventare più leggibile, anche quando il numero dei punti aperti non diminuisce immediatamente."
+    },
+    {
+      "type": "p",
+      "text": "Mantieni una versione riconoscibile del riepilogo condiviso. Più copie aggiornate separatamente possono produrre stati incompatibili. Il referente del processo deve chiarire quale fonte venga utilizzata per il coordinamento."
+    },
+    {
+      "type": "h2",
+      "text": "Verificare il metodo con un caso completo"
+    },
+    {
+      "type": "p",
+      "text": "Scegli un punto già gestito e prova a ricostruirne il percorso: osservazione, referente, risposta e criterio di chiusura. Se mancano collegamenti, usa il caso per migliorare i campi del registro. Non è necessario introdurre un nuovo software prima di aver chiarito il metodo."
+    },
+    {
+      "type": "p",
+      "text": "Nell’area [checklist](/checklist) e nella sezione [domande](/domande) trovi altri percorsi operativi. Utilizzali per preparare le verifiche del tuo processo, mantenendo i documenti e i ruoli del progetto come riferimento."
+    },
+    {
+      "type": "p",
+      "text": "Il beneficio da cercare è una situazione comprensibile a chi deve agire. Un registro breve e aggiornato può essere più utile di un elenco molto dettagliato che non distingue fatti, ipotesi e riscontri. Parti dai collegamenti essenziali e correggi le ambiguità che emergono nell’uso."
+    }
+  ]
+},
   {
     "slug": "rapportino-fotografico-cantiere-organizzare",
     "title": "Rapportino fotografico di cantiere: come rendere le immagini comprensibili e ritrovabili",
