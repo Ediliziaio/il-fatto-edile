@@ -183,7 +183,7 @@ export default function ArticlePage() {
           )}
 
           {/* corpo */}
-          <div className="mt-2">
+          <div data-editorial-body className="mt-2">
             {blocks.map((b, i) =>
               b === 'ad' ? (
                 <AdSlot key={`ad-${i}`} format="inarticle" className="my-8" />
