@@ -1,3 +1,4 @@
+import { PriorityPaths } from "@/components/PriorityPaths";
 import { Link } from 'react-router';
 import { ARTICLES, SITE, byCategory, byFormat } from '@/data/articles';
 import { useSeo } from '@/lib/seo';
@@ -49,6 +50,8 @@ export default function Home() {
       <h1 className="mx-auto max-w-7xl px-4 pt-8 font-serif text-3xl font-black tracking-tight text-neutral-950 md:text-4xl">
         Il Fatto Edile: checklist e pratica di cantiere
       </h1>
+
+      <PriorityPaths />
 
       {/* apertura */}
       <section aria-label="In evidenza" className="mx-auto max-w-7xl px-4 pt-6">

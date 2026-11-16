@@ -1,0 +1,21 @@
+{
+  "title": "Persone, documenti e passaggi del cantiere",
+  "intro": "La pratica di cantiere richiede responsabilità riconoscibili e informazioni recuperabili. Parti dal passaggio da organizzare e usa le guide per preparare verifiche, consegne e chiarimenti.",
+  "links": [
+    {
+      "href": "/checklist",
+      "title": "Scegliere una checklist di cantiere",
+      "description": "Accedi alla raccolta e individua il documento pertinente all’attività da organizzare."
+    },
+    {
+      "href": "/articolo/top-10-professioni-edili-ricercate",
+      "title": "Approfondire ruoli e competenze",
+      "description": "Leggi il quadro delle professioni distinguendo ruolo, esperienza e requisiti da verificare."
+    },
+    {
+      "href": "/articolo/sal-non-pagato-cosa-fare",
+      "title": "Ricostruire un SAL non pagato",
+      "description": "Raccogli stati dei documenti e riferimenti prima del confronto con i soggetti competenti."
+    }
+  ]
+}
