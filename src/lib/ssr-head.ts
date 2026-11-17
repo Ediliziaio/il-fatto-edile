@@ -39,10 +39,10 @@ function renderHead({ title, description, canonical, type = 'website', image = `
     tags.push(`<meta name="twitter:image" content="${esc(image)}" />`);
   }
   if (jsonLd) {
-    for (const data of Object.values(jsonLd)) {
+    for (const [id, data] of Object.entries(jsonLd)) {
       if (!data) continue;
       const json = JSON.stringify(data).replace(/<\//g, '<\\/');
-      tags.push(`<script type="application/ld+json">${json}</script>`);
+      tags.push(`<script type="application/ld+json" data-seo="${esc(id)}">${json}</script>`);
     }
   }
   return tags.join('\n    ');
