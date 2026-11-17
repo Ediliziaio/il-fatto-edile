@@ -3,6 +3,7 @@
   "enforcePublishedOnOrAfter": "2026-11-07",
   "requiredSlugs": [
     "rapportino-fotografico-cantiere-organizzare",
-    "registro-punti-aperti-cantiere-verifiche"
+    "registro-punti-aperti-cantiere-verifiche",
+    "revisioni-disegni-cantiere-elaborati-aggiornati"
   ]
 }

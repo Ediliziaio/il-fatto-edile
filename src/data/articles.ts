@@ -1,3 +1,4 @@
+import { editorial20261117 } from "./editorial20261117";
 import { editorialNative } from "./editorial-native";
 import type { Article, CategorySlug } from '@/types/article';
 import { CATEGORIES } from '@/types/article';
@@ -6,7 +7,7 @@ import { batch2 } from './articles-batch2';
 import { batch3 } from './articles-batch3';
 import { batch4 } from './articles-batch4';
 
-export const ARTICLES: Article[] = [...editorialNative, ...batch1, ...batch2, ...batch3, ...batch4].sort(
+export const ARTICLES: Article[] = [...editorial20261117, ...editorialNative, ...batch1, ...batch2, ...batch3, ...batch4].sort(
   (a, b) => b.publishedAt.localeCompare(a.publishedAt),
 );
 

@@ -1,5 +1,19 @@
 [
   {
+    "title": "Disegni aggiornati in cantiere: distribuire le revisioni e ritirare le copie superate",
+    "description": "Registro destinatari, conferme di ricezione e ritiro delle stampe superate: un metodo per distribuire gli elaborati aggiornati alle squadre in cantiere.",
+    "path": "/articolo/revisioni-disegni-cantiere-elaborati-aggiornati",
+    "section": "native",
+    "slug": "revisioni-disegni-cantiere-elaborati-aggiornati",
+    "publishedAt": "2026-11-17T08:00:00Z",
+    "image": "/images/covers/revisioni-disegni-cantiere-elaborati-aggiornati.jpg",
+    "sponsor": null,
+    "sourceURLs": [
+      "https://www.ukbimframework.org/wp-content/uploads/2021/02/Guidance-Part-C_Facilitating-the-common-data-environment-workflow-and-technical-solutions_Edition-1.pdf"
+    ],
+    "category": "progetti"
+  },
+  {
     "title": "Software BIM per l’impresa: la prova da chiedere prima di scegliere",
     "description": "Una prova con modello IFC, quantità e revisione del progetto per capire se un software BIM serve davvero all’impresa, oltre la demo commerciale.",
     "path": "/articolo/software-bim-prova-modello-computo-impresa",
