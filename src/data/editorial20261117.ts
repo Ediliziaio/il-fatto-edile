@@ -17,7 +17,7 @@ export const editorial20261117: Article[] = [
     "authorRole": "Redazione",
     "publishedAt": "2026-11-17",
     "updatedAt": "2026-11-17",
-    "readingTime": 12,
+    "readingTime": 14,
     "coverTheme": "blueprint",
     "coverAlt": "Tavolo con disegni e tablet: immagine illustrativa originale generata con AI",
     "keywords": [
@@ -198,31 +198,23 @@ export const editorial20261117: Article[] = [
       },
       {
         "type": "h2",
-        "text": "Domande frequenti sulla distribuzione degli elaborati"
-      },
-      {
-        "type": "h3",
-        "text": "Basta inviare il nuovo disegno nel gruppo del cantiere?"
+        "text": "Consegnare il pacchetto giusto quando entra una nuova squadra"
       },
       {
         "type": "p",
-        "text": "Il canale può essere utile se è previsto dall’organizzazione, ma occorre identificare documento, revisione e destinatari, conservare il pacchetto inviato e gestire le copie sostituite. La presenza nel gruppo non prova che tutte le squadre interessate abbiano il riferimento utilizzabile. Chiedi un riscontro coerente con la procedura e prevedi come segnalare gli allegati mancanti o non leggibili. Le eventuali approvazioni tecniche rimangono separate dalla conferma di ricezione."
-      },
-      {
-        "type": "h3",
-        "text": "Devo eliminare tutti i vecchi PDF?"
+        "text": "L’ingresso di una squadra richiede un passaggio documentale anche quando in quel giorno non arriva alcuna nuova revisione. Il referente deve collegare l’attività prevista all’elenco corrente degli elaborati, evitando di riutilizzare automaticamente il pacchetto inviato settimane prima a un’altra impresa. Una consegna per attività può richiamare pianta della zona, dettagli pertinenti e altri documenti previsti dalla commessa. L’elenco deve essere definito dai soggetti competenti: il responsabile della distribuzione ne controlla identità e disponibilità, senza scegliere autonomamente soluzioni tecniche da eseguire."
       },
       {
         "type": "p",
-        "text": "La conservazione segue le regole della commessa. Il passaggio essenziale è separare chiaramente l’archivio storico dai documenti disponibili per l’uso operativo previsto. Evita sovrascritture che cancellino la ricostruzione degli invii e rendi riconoscibili le copie ritirate. Se un documento precedente serve per un confronto, deve restare evidente perché viene consultato. Il registro aiuta a mantenere questo collegamento senza affidarsi alla data di modifica del file o a un nome scelto informalmente."
-      },
-      {
-        "type": "h3",
-        "text": "Che cosa fare se due squadre hanno revisioni diverse?"
+        "text": "Come esempio illustrativo, immaginiamo un pacchetto chiamato “consegna squadra piano primo”. Il nome identifica l’occasione organizzativa, mentre il registro elenca i codici e le revisioni dei singoli documenti. Il pacchetto conserva anche la data di consegna e il destinatario, così che possa essere ricostruito senza confondere la data dell’invio con quella di emissione degli elaborati. Se un dettaglio è ancora in chiarimento, la consegna non lo presenta come risolto: rimanda al punto aperto e al referente che dovrà gestire il passaggio previsto."
       },
       {
         "type": "p",
-        "text": "Registra la discrepanza e coinvolgi il referente previsto dalla commessa, indicando elaborati, revisioni, luoghi e attività interessate. Non scegliere autonomamente la copia che sembra più recente senza verificarne lo stato e l’uso. Una volta chiarito il riferimento, aggiorna la distribuzione e verifica le altre copie coinvolte. Conserva il riscontro del percorso: servirà a capire se la correzione riguarda un episodio isolato oppure un passaggio ricorrente da migliorare nel sistema documentale del cantiere."
+        "text": "Quando una revisione interessa uno degli allegati, il registro deve rendere visibile quale elemento del pacchetto sia stato sostituito. Un nuovo file compresso che porta lo stesso nome del precedente può essere comodo da scaricare ma non racconta la variazione. Conserva quindi la corrispondenza fra vecchio e nuovo invio e comunica alla squadra quali copie operative devono essere aggiornate. Se il destinatario conserva un raccoglitore cartaceo, il ritiro deve raggiungere anche quello: l’aggiornamento della cartella digitale non dimostra che il documento in mano all’operatore sia cambiato."
+      },
+      {
+        "type": "p",
+        "text": "Al passaggio di fine attività, registra gli eventuali chiarimenti ancora pendenti e i riferimenti dei documenti che la squadra restituisce o archivia secondo le procedure della commessa. Questo consente a chi subentra di comprendere quale materiale fosse disponibile durante quella fase. Non si tratta di trasformare la consegna in un’approvazione retroattiva: serve a conservare una cronologia utilizzabile. La matrice tra attività, destinatari ed elaborati rende il circuito più chiaro soprattutto quando più imprese lavorano in zone diverse e non tutti gli aggiornamenti devono essere distribuiti indistintamente a ogni persona presente in cantiere."
       }
     ]
   }
