@@ -14,7 +14,8 @@ export interface ConsentState {
 export function getConsent(): ConsentState | null {
   try {
     const raw = localStorage.getItem(CONSENT_KEY);
-    return raw ? (JSON.parse(raw) as ConsentState) : null;
+    const parsed = raw ? (JSON.parse(raw) as Partial<ConsentState>) : null;
+    return parsed && typeof parsed.analytics === 'boolean' && typeof parsed.marketing === 'boolean' ? parsed as ConsentState : null;
   } catch {
     return null;
   }
@@ -22,7 +23,11 @@ export function getConsent(): ConsentState | null {
 
 function saveConsent(c: Omit<ConsentState, 'timestamp'>) {
   const state: ConsentState = { ...c, timestamp: new Date().toISOString() };
-  localStorage.setItem(CONSENT_KEY, JSON.stringify(state));
+  try {
+    localStorage.setItem(CONSENT_KEY, JSON.stringify(state));
+  } catch {
+    // The explicit choice still reaches the adapter for this page.
+  }
   // hook per il consenso: qui attivare gli script di analytics/marketing
   window.dispatchEvent(new CustomEvent('ife-consent-updated', { detail: state }));
 }
@@ -81,7 +86,12 @@ export default function CookieBanner() {
 
   // riapertura del banner da Cookie Policy ("Modifica preferenze")
   useEffect(() => {
-    const reopen = () => setVisible(true);
+    const reopen = () => {
+      const current = getConsent();
+      setAnalytics(current?.analytics ?? false);
+      setMarketing(current?.marketing ?? false);
+      setVisible(true);
+    };
     window.addEventListener('ife-open-cookie-banner', reopen);
     return () => window.removeEventListener('ife-open-cookie-banner', reopen);
   }, []);
@@ -154,7 +164,7 @@ export default function CookieBanner() {
               />
               <Toggle
                 label="Cookie di analisi"
-                desc="Statistiche anonime di utilizzo (es. misurazione del traffico) per migliorare contenuti e navigazione."
+                desc="Statistiche di utilizzo per migliorare contenuti e navigazione."
                 checked={analytics}
                 onChange={setAnalytics}
               />
