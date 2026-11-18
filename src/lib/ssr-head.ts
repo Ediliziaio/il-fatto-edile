@@ -119,7 +119,7 @@ export function headFor(url: string): string {
         description: a.seoDescription ?? a.excerpt,
         canonical: `${SITE.domain}/articolo/${a.slug}`,
         type: 'article',
-        image: coverUrl(a.slug),
+        image: coverUrl(a.coverSlug ?? a.slug),
         jsonLd: articleJsonLd(a),
       });
     }

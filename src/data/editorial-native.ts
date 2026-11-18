@@ -20,7 +20,7 @@ export const editorialNative: Article[] = [
     "updatedAt": "2026-11-18",
     "readingTime": 13,
     "coverTheme": "blueprint",
-    "coverAlt": "Soggiorno con pavimento caldo e finiture coordinate: immagine originale AI illustrativa, non una realizzazione di Dimora Torino. Immagine originale generata con AI a scopo illustrativo. Non rappresenta lo showroom o un intervento reale dell’azienda.",
+    "coverAlt": "Soggiorno con pavimento caldo e finiture coordinate: immagine originale AI illustrativa, non una realizzazione di Dimora Torino.",
     "keywords": [
       "Dimora Torino",
       "Progetti",
@@ -256,7 +256,7 @@ export const editorialNative: Article[] = [
       },
       {
         "type": "p",
-        "text": "Dimora Torino presenta servizi di [ristrutturazione e interior design](https://dimoratorino.it/servizi/). La scelta dei materiali può essere affrontata dentro questo percorso, mantenendo il collegamento con distribuzione, verifiche dell’immobile e attività previste. Il cliente può spiegare priorità e preferenze, mentre il progetto sviluppa il modo in cui inserirle nella casa reale."
+        "text": "Dimora Torino segue interventi di [ristrutturazione e interior design](https://dimoratorino.it/servizi/). La scelta dei materiali può essere affrontata dentro questo percorso, mantenendo il collegamento con distribuzione, verifiche dell’immobile e attività previste. Il cliente può spiegare priorità e preferenze, mentre il progetto sviluppa il modo in cui inserirle nella casa reale."
       },
       {
         "type": "p",
@@ -264,7 +264,7 @@ export const editorialNative: Article[] = [
       },
       {
         "type": "p",
-        "text": "Il [sito ufficiale](https://dimoratorino.it/) permette di conoscere l’attività e consultare i progetti pubblicati dall’azienda. Per iniziare il confronto si possono portare fotografie, una pianta e pochi riferimenti visivi ben scelti. Non serve arrivare con un elenco completo di materiali: il progetto può partire dall’uso della casa e dal risultato che si desidera ottenere."
+        "text": "[Dimora Torino](https://dimoratorino.it/) può essere contattata direttamente per discutere materiali, finiture e distribuzione degli spazi, partendo dalla casa da rinnovare. Per iniziare il confronto si possono portare fotografie, una pianta e pochi riferimenti visivi ben scelti. Non serve arrivare con un elenco completo di materiali: il progetto può partire dall’uso della casa e dal risultato che si desidera ottenere."
       },
       {
         "type": "h2",
@@ -300,7 +300,7 @@ export const editorialNative: Article[] = [
     "updatedAt": "2026-11-18",
     "readingTime": 12,
     "coverTheme": "blueprint",
-    "coverAlt": "Finestra con rete, protezione metallica e tenda in una scena illustrativa AI: non è una realizzazione Best Infissi. Immagine originale generata con AI a scopo illustrativo. Non rappresenta lo showroom o un intervento reale dell’azienda.",
+    "coverAlt": "Finestra con rete, protezione metallica e tenda in una scena illustrativa AI: non è una realizzazione Best Infissi.",
     "keywords": [
       "Best Infissi",
       "Materiali e Prodotti",
@@ -348,7 +348,7 @@ export const editorialNative: Article[] = [
       },
       {
         "type": "p",
-        "text": "Il [sito ufficiale Best Infissi](https://bestinfissi.it/) presenta le categorie tra le proprie linee di prodotto. Per il cliente è utile partire dall’azione che desidera rendere più comoda: aprire una finestra, attraversare il balcone, mantenere una certa riservatezza o scegliere una chiusura aggiuntiva. Questa descrizione fornisce un orientamento più concreto del solo nome generico dell’accessorio."
+        "text": "La gamma [Best Infissi](https://bestinfissi.it/) comprende zanzariere, inferriate e tendaggi, da scegliere insieme alle caratteristiche delle aperture. Per il cliente è utile partire dall’azione che desidera rendere più comoda: aprire una finestra, attraversare il balcone, mantenere una certa riservatezza o scegliere una chiusura aggiuntiva. Questa descrizione fornisce un orientamento più concreto del solo nome generico dell’accessorio."
       },
       {
         "type": "p",
@@ -400,7 +400,7 @@ export const editorialNative: Article[] = [
       },
       {
         "type": "p",
-        "text": "Se si nota un problema di scorrimento o di chiusura, descriverlo con una fotografia può aiutare la richiesta di assistenza. Non occorre forzare il meccanismo per comprendere ogni particolare. Best Infissi presenta la manutenzione tra i propri servizi e il contatto diretto consente di discutere l’intervento pertinente sulla base della fornitura reale."
+        "text": "Se si nota un problema di scorrimento o di chiusura, descriverlo con una fotografia può aiutare la richiesta di assistenza. Non occorre forzare il meccanismo per comprendere ogni particolare. Best Infissi si occupa anche della manutenzione dei serramenti. Il contatto diretto permette di descrivere il prodotto installato e richiedere il servizio adatto."
       },
       {
         "type": "h2",
@@ -536,7 +536,7 @@ export const editorialNative: Article[] = [
       },
       {
         "type": "p",
-        "text": "La pagina [Chi siamo di Best Infissi](https://bestinfissi.it/chi-siamo/) presenta l’attività dell’azienda. Il contatto può riguardare un solo accessorio o un rinnovo più ampio, da definire secondo le esigenze e le condizioni dell’abitazione. La scelta viene così costruita sull’uso quotidiano, mantenendo distinti il controllo degli insetti, la protezione e la gestione della luce."
+        "text": "La [consulenza Best Infissi](https://bestinfissi.it/chi-siamo/) permette di affrontare la scelta dei prodotti insieme alla loro installazione e manutenzione. Il contatto può riguardare un solo accessorio o un rinnovo più ampio, da definire secondo le esigenze e le condizioni dell’abitazione. La scelta viene così costruita sull’uso quotidiano, mantenendo distinti il controllo degli insetti, la protezione e la gestione della luce."
       },
       {
         "type": "p",
@@ -564,7 +564,7 @@ export const editorialNative: Article[] = [
     "updatedAt": "2026-11-18",
     "readingTime": 12,
     "coverTheme": "blueprint",
-    "coverAlt": "Lavabo e rubinetteria in un bagno contemporaneo: immagine AI illustrativa, non un progetto reale di Il Bagno Group. Immagine originale generata con AI a scopo illustrativo. Non rappresenta lo showroom o un intervento reale dell’azienda.",
+    "coverAlt": "Lavabo e rubinetteria in un bagno contemporaneo: immagine AI illustrativa, non un progetto reale di Il Bagno Group.",
     "keywords": [
       "Il Bagno Group",
       "Materiali e Prodotti",
@@ -1592,8 +1592,8 @@ export const editorialNative: Article[] = [
   },
   {
     "slug": "renova-solution-trasformare-il-budget-di-casa-in-scelte-riconoscibili",
-    "title": "Renova Solution: trasformare il budget di casa in scelte riconoscibili",
-    "excerpt": "Una soluzione di base e alternative separate: come preparare il confronto con Renova Solution evitando di mescolare priorità e desideri.",
+    "title": "Renova Solution: ristrutturazioni, infissi e preventivo dei lavori",
+    "excerpt": "Ristrutturazioni e infissi con Renova Solution in Veneto e Friuli: servizi, materiali e varianti da riconoscere nel preventivo della casa.",
     "format": "news",
     "category": "progetti",
     "tags": [
@@ -1602,15 +1602,15 @@ export const editorialNative: Article[] = [
     "author": "Redazione Il Fatto Edile",
     "authorRole": "Redazione",
     "publishedAt": "2026-10-22",
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-11-18",
     "readingTime": 5,
     "coverTheme": "green",
     "coverAlt": "Casa illustrativa con serramenti e pannelli solari, non un progetto documentato di Renova Solution",
     "keywords": [
-      "Renova Solution: trasformare il budget di casa in scelte riconoscibili"
+      "Renova Solution: ristrutturazioni, infissi e preventivo dei lavori"
     ],
     "keyPoints": [
-      "Il budget è più utile quando corrisponde a un perimetro di lavori. Prima del totale, serve capire quali decisioni stai approvando e quali restano opzioni."
+      "Renova Solution realizza ristrutturazioni e si occupa di infissi, fotovoltaico e climatizzazione in Veneto e Friuli Venezia Giulia. Per chi deve rinnovare casa, il preventivo collega le scelte sui prodotti alle opere necessarie. Il risultato da cercare è una proposta in cui siano riconoscibili gli interventi da eseguire, i materiali e le eventuali alternative."
     ],
     "faq": [
       {
@@ -1629,11 +1629,11 @@ export const editorialNative: Article[] = [
     "content": [
       {
         "type": "p",
-        "text": "Il budget è più utile quando corrisponde a un perimetro di lavori. Prima del totale, serve capire quali decisioni stai approvando e quali restano opzioni."
+        "text": "Renova Solution realizza ristrutturazioni e si occupa di infissi, fotovoltaico e climatizzazione in Veneto e Friuli Venezia Giulia. Per chi deve rinnovare casa, il preventivo collega le scelte sui prodotti alle opere necessarie. Il risultato da cercare è una proposta in cui siano riconoscibili gli interventi da eseguire, i materiali e le eventuali alternative."
       },
       {
         "type": "p",
-        "text": "Un progetto di casa può crescere rapidamente: a una prima esigenza si aggiungono finiture, accessori e lavori che sembrano opportuni mentre il cantiere è aperto. Per mantenere il controllo, conviene distinguere la soluzione necessaria dalle possibilità ulteriori. Renova Solution presenta un'offerta che comprende interventi su infissi, energia e rinnovo della casa."
+        "text": "La sostituzione delle finestre, il rinnovo di un ambiente e il progetto di un impianto richiedono decisioni diverse, anche quando fanno parte della stessa ristrutturazione. Renova Solution riunisce questi servizi nella propria offerta. Prima di approvare il lavoro è utile distinguere ciò che risponde alla necessità principale da accessori, finiture e opere aggiuntive, così da assegnare il budget a scelte effettivamente comprese nella proposta."
       },
       {
         "type": "h2",
@@ -1669,7 +1669,7 @@ export const editorialNative: Article[] = [
       },
       {
         "type": "p",
-        "text": "Il sito Renova Solution permette di conoscere i servizi e presentare il progetto. Arrivare con un budget collegato alle priorità offre una base più chiara al dialogo: non impone di scegliere soltanto l'alternativa meno impegnativa, ma aiuta a capire quale risultato stai acquistando e quali decisioni puoi lasciare a un altro momento."
+        "text": "Puoi presentare a Renova Solution la casa da rinnovare e richiedere informazioni su lavori, prodotti e servizi. Arrivare con un budget collegato alle priorità offre una base più chiara al dialogo: non impone di scegliere soltanto l'alternativa meno impegnativa, ma aiuta a capire quale risultato stai acquistando e quali decisioni puoi lasciare a un altro momento."
       },
       {
         "type": "h2",
@@ -1722,7 +1722,7 @@ export const editorialNative: Article[] = [
       },
       {
         "type": "p",
-        "text": "Conserva offerta, allegati e approvazioni con una denominazione che identifichi data e versione. Se rimane una domanda aperta, non archiviarla come decisione conclusa: scrivi chi deve rispondere e quale attività dipende dal chiarimento. Al momento della consegna, riprendi il perimetro approvato per discutere eventuali osservazioni. Renova Solution presenta servizi per casa, infissi ed energia; organizzare la richiesta in questo modo aiuta a spiegare quali di quei servizi vuoi includere nel tuo progetto."
+        "text": "Conserva offerta, allegati e approvazioni con una denominazione che identifichi data e versione. Se rimane una domanda aperta, non archiviarla come decisione conclusa: scrivi chi deve rispondere e quale attività dipende dal chiarimento. Al momento della consegna, riprendi il perimetro approvato per discutere eventuali osservazioni. Renova Solution realizza ristrutturazioni, fornisce infissi e installa impianti energetici; organizzare la richiesta in questo modo aiuta a spiegare quali di quei servizi vuoi includere nel tuo progetto."
       },
       {
         "type": "h2",
@@ -1745,13 +1745,13 @@ export const editorialNative: Article[] = [
       }
     ],
     "sponsor": "Renova Solution",
-    "seoTitle": "Renova Solution: budget e varianti della ristrutturazione",
-    "seoDescription": "Una soluzione di base e alternative separate: come preparare il confronto con Renova Solution evitando di mescolare priorità e desideri."
+    "seoTitle": "Renova Solution: ristrutturazioni e preventivi dei lavori",
+    "seoDescription": "Ristrutturazioni e infissi con Renova Solution in Veneto e Friuli: servizi, materiali e varianti da riconoscere nel preventivo della casa."
   },
   {
     "slug": "innovasol-valutare-un-impianto-pensando-a-chi-lo-gestira",
-    "title": "Innovasol: valutare un impianto pensando a chi lo gestirà",
-    "excerpt": "Utenti, istruzioni e riferimenti: le domande sul dopo-installazione da aggiungere alla richiesta di un servizio energetico Innovasol.",
+    "title": "Innovasol: impianti per la casa e assistenza dopo l’installazione",
+    "excerpt": "Innovasol progetta e installa fotovoltaico, solare termico, riscaldamento e climatizzazione in Sicilia, con assistenza dopo l’installazione.",
     "format": "news",
     "category": "sostenibilita",
     "tags": [
@@ -1760,15 +1760,15 @@ export const editorialNative: Article[] = [
     "author": "Redazione Il Fatto Edile",
     "authorRole": "Redazione",
     "publishedAt": "2026-10-22",
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-11-18",
     "readingTime": 4,
     "coverTheme": "green",
     "coverAlt": "Abitazione mediterranea illustrativa con solare e climatizzazione, non un impianto reale di Innovasol",
     "keywords": [
-      "Innovasol: valutare un impianto pensando a chi lo gestirà"
+      "Innovasol: impianti per la casa e assistenza dopo l’installazione"
     ],
     "keyPoints": [
-      "La decisione non riguarda soltanto l’installazione. Riguarda anche le persone che useranno l’impianto e dovranno ritrovare informazioni e documenti nel tempo."
+      "Innovasol progetta e installa impianti fotovoltaici, solari termici, di riscaldamento e climatizzazione in Sicilia. Il servizio comprende anche l’assistenza dopo l’installazione. Per chi sceglie un nuovo impianto, conoscere le modalità d’uso, le istruzioni e i riferimenti per la manutenzione è parte del lavoro da valutare prima dell’acquisto."
     ],
     "faq": [
       {
@@ -1787,11 +1787,11 @@ export const editorialNative: Article[] = [
     "content": [
       {
         "type": "p",
-        "text": "La decisione non riguarda soltanto l’installazione. Riguarda anche le persone che useranno l’impianto e dovranno ritrovare informazioni e documenti nel tempo."
+        "text": "Innovasol progetta e installa impianti fotovoltaici, solari termici, di riscaldamento e climatizzazione in Sicilia. Il servizio comprende anche l’assistenza dopo l’installazione. Per chi sceglie un nuovo impianto, conoscere le modalità d’uso, le istruzioni e i riferimenti per la manutenzione è parte del lavoro da valutare prima dell’acquisto."
       },
       {
         "type": "p",
-        "text": "Quando una famiglia valuta un impianto, il confronto si concentra facilmente su apparecchiature e lavori. Una domanda ulteriore può rendere la scelta più concreta: chi lo gestirà ogni giorno? Innovasol presenta servizi per fotovoltaico, climatizzazione, riscaldamento e solare termico in Sicilia. Per approfondirli, vale la pena includere anche il tema dell'utilizzo successivo."
+        "text": "L’impianto rimane nella casa dopo che la squadra ha completato l’installazione. Deve essere utilizzato da persone che possono avere abitudini ed esigenze differenti: chi segue il preventivo non coincide necessariamente con chi userà ogni giorno i comandi. Il confronto con Innovasol può quindi comprendere sia il prodotto da installare sia la consegna delle informazioni necessarie per gestirlo nel tempo e richiedere supporto."
       },
       {
         "type": "h2",
@@ -1903,13 +1903,13 @@ export const editorialNative: Article[] = [
       }
     ],
     "sponsor": "Innovasol",
-    "seoTitle": "Innovasol: scegliere un impianto facile da gestire",
-    "seoDescription": "Utenti, istruzioni e riferimenti: le domande sul dopo-installazione da aggiungere alla richiesta di un servizio energetico Innovasol."
+    "seoTitle": "Innovasol: impianti e assistenza in Sicilia",
+    "seoDescription": "Innovasol progetta e installa fotovoltaico, solare termico, riscaldamento e climatizzazione in Sicilia, con assistenza dopo l’installazione."
   },
   {
     "slug": "green-energy-group-preparare-una-decisione-energetica-condivisa-in-azienda",
-    "title": "Green Energy Group: preparare una decisione energetica condivisa in azienda",
-    "excerpt": "Referenti, dati e scenari: una scheda per discutere il progetto fotovoltaico con Green Energy Group prima della decisione d’investimento.",
+    "title": "Green Energy Group: fotovoltaico per le aziende",
+    "excerpt": "Green Energy Group realizza fotovoltaico per aziende: progettazione, installazione e messa in servizio collegate all’utilizzo dell’immobile.",
     "format": "news",
     "category": "sostenibilita",
     "tags": [
@@ -1918,15 +1918,15 @@ export const editorialNative: Article[] = [
     "author": "Redazione Il Fatto Edile",
     "authorRole": "Redazione",
     "publishedAt": "2026-10-22",
-    "updatedAt": "2026-10-22",
+    "updatedAt": "2026-11-18",
     "readingTime": 4,
     "coverTheme": "green",
-    "coverAlt": "Casa illustrativa con fotovoltaico, accumulo e ricarica, non una realizzazione documentata di Green Energy Group",
+    "coverAlt": "Edificio aziendale con impianto fotovoltaico: immagine originale AI illustrativa, non una realizzazione Green Energy Group.",
     "keywords": [
-      "Green Energy Group: preparare una decisione energetica condivisa in azienda"
+      "Green Energy Group: fotovoltaico per le aziende"
     ],
     "keyPoints": [
-      "Chi approva l’investimento e chi usa l’immobile devono poter leggere la stessa proposta. Una scheda condivisa aiuta a portare il progetto nella vita dell’impresa."
+      "Green Energy Group progetta e realizza impianti fotovoltaici anche per le aziende. Il servizio comprende lo sviluppo del progetto, l’installazione e la messa in funzione, con soluzioni di accumulo e ricarica da valutare in base alle esigenze dell’immobile. La proposta va collegata agli orari dell’attività e ai consumi effettivi."
     ],
     "faq": [
       {
@@ -1945,11 +1945,11 @@ export const editorialNative: Article[] = [
     "content": [
       {
         "type": "p",
-        "text": "Chi approva l’investimento e chi usa l’immobile devono poter leggere la stessa proposta. Una scheda condivisa aiuta a portare il progetto nella vita dell’impresa."
+        "text": "Green Energy Group progetta e realizza impianti fotovoltaici anche per le aziende. Il servizio comprende lo sviluppo del progetto, l’installazione e la messa in funzione, con soluzioni di accumulo e ricarica da valutare in base alle esigenze dell’immobile. La proposta va collegata agli orari dell’attività e ai consumi effettivi."
       },
       {
         "type": "p",
-        "text": "Un progetto energetico aziendale coinvolge punti di vista diversi: disponibilità dell'immobile, organizzazione del lavoro e valutazione economica. Per approfondire il fotovoltaico proposto da Green Energy Group, è utile preparare una base comune su cui possano confrontarsi le persone chiamate a decidere."
+        "text": "In un’impresa la scelta di un impianto coinvolge chi approva l’investimento, chi segue l’edificio e chi organizza il lavoro. Il confronto con Green Energy Group deve partire da informazioni condivise: dati energetici, disponibilità delle superfici e cambiamenti già previsti per l’attività. Mettere insieme questi elementi permette di discutere componenti e lavorazioni con la stessa base, senza confondere il progetto attuale con ipotesi di ampliamento ancora aperte."
       },
       {
         "type": "h2",
@@ -2050,7 +2050,8 @@ export const editorialNative: Article[] = [
       }
     ],
     "sponsor": "Green Energy Group",
-    "seoTitle": "Green Energy Group: preparare un progetto energetico aziendale",
-    "seoDescription": "Referenti, dati e scenari: una scheda per discutere il progetto fotovoltaico con Green Energy Group prima della decisione d’investimento."
+    "seoTitle": "Green Energy Group: impianti fotovoltaici per aziende",
+    "seoDescription": "Green Energy Group realizza fotovoltaico per aziende: progettazione, installazione e messa in servizio collegate all’utilizzo dell’immobile.",
+    "coverSlug": "green-energy-group-fotovoltaico-impresa"
   }
 ];

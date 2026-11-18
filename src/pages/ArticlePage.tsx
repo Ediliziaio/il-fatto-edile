@@ -84,7 +84,7 @@ export default function ArticlePage() {
     description: article ? article.seoDescription ?? article.excerpt : 'L\u2019articolo richiesto non è disponibile.',
     canonical: article ? `${SITE.domain}/articolo/${article.slug}` : SITE.domain,
     type: 'article',
-    image: article ? coverUrl(article.slug) : undefined,
+    image: article ? coverUrl(article.coverSlug ?? article.slug) : undefined,
     jsonLd,
   });
 
@@ -148,9 +148,9 @@ export default function ArticlePage() {
 
           <figure className="mt-6">
             <picture>
-              <source srcSet={`/images/covers/${article.slug}.webp`} type="image/webp" />
+              <source srcSet={`/images/covers/${article.coverSlug ?? article.slug}.webp`} type="image/webp" />
               <img
-                src={`/images/covers/${article.slug}.jpg`}
+                src={`/images/covers/${article.coverSlug ?? article.slug}.jpg`}
                 alt={article.coverAlt}
                 width={1200}
                 height={675}

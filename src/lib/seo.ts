@@ -93,7 +93,7 @@ export function articleJsonLd(a: Article) {
     ...(a.sponsor ? { sponsor: { "@type": "Organization", name: a.sponsor } } : {}),
     headline: a.title,
     description: a.seoDescription ?? a.excerpt,
-    image: [coverUrl(a.slug)],
+    image: [coverUrl(a.coverSlug ?? a.slug)],
     keywords: a.keywords.join(', '),
     articleSection: categoryLabel(a.category),
     inLanguage: 'it-IT',

@@ -65,6 +65,8 @@ export interface Article {
   /** chiave del tema grafico di copertina: 'brick' | 'crane' | 'blueprint' | 'concrete' | 'green' | 'steel' */
   coverTheme: 'brick' | 'crane' | 'blueprint' | 'concrete' | 'green' | 'steel';
   coverAlt: string;
+  /** Nome della copertina, indipendente dallo slug pubblico dell’articolo. */
+  coverSlug?: string;
   keywords: string[];
   /** 4-6 punti chiave in apertura: box "In breve" per featured snippet e AI overview (AEO/GEO) */
   keyPoints: string[];
