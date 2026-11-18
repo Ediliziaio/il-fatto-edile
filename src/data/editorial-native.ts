@@ -785,7 +785,7 @@ export const editorialNative: Article[] = [
   {
     "slug": "renova-solution-trasformare-il-budget-di-casa-in-scelte-riconoscibili",
     "title": "Renova Solution: trasformare il budget di casa in scelte riconoscibili",
-    "excerpt": "Contenuto sponsorizzato · Renova Solution. Una soluzione di base e alternative separate: come preparare il confronto con Renova Solution evitando di mescolare priorità e desideri.",
+    "excerpt": "Una soluzione di base e alternative separate: come preparare il confronto con Renova Solution evitando di mescolare priorità e desideri.",
     "format": "news",
     "category": "progetti",
     "tags": [
@@ -819,10 +819,6 @@ export const editorialNative: Article[] = [
       }
     ],
     "content": [
-      {
-        "type": "p",
-        "text": "**Contenuto sponsorizzato · Renova Solution**. Articolo pubblicitario realizzato per presentare i servizi dell’azienda."
-      },
       {
         "type": "p",
         "text": "Il budget è più utile quando corrisponde a un perimetro di lavori. Prima del totale, serve capire quali decisioni stai approvando e quali restano opzioni."
@@ -926,7 +922,7 @@ export const editorialNative: Article[] = [
       },
       {
         "type": "p",
-        "text": "[Conosci Renova Solution e presenta le tue priorità](https://www.renovasolution.it/ \"sponsored\")"
+        "text": "[Richiedi informazioni a Renova Solution](https://www.renovasolution.it/contatti \"sponsored\")"
       },
       {
         "type": "h2",
@@ -947,7 +943,7 @@ export const editorialNative: Article[] = [
   {
     "slug": "innovasol-valutare-un-impianto-pensando-a-chi-lo-gestira",
     "title": "Innovasol: valutare un impianto pensando a chi lo gestirà",
-    "excerpt": "Contenuto sponsorizzato · Innovasol. Utenti, istruzioni e riferimenti: le domande sul dopo-installazione da aggiungere alla richiesta di un servizio energetico Innovasol.",
+    "excerpt": "Utenti, istruzioni e riferimenti: le domande sul dopo-installazione da aggiungere alla richiesta di un servizio energetico Innovasol.",
     "format": "news",
     "category": "sostenibilita",
     "tags": [
@@ -981,10 +977,6 @@ export const editorialNative: Article[] = [
       }
     ],
     "content": [
-      {
-        "type": "p",
-        "text": "**Contenuto sponsorizzato · Innovasol**. Articolo pubblicitario realizzato per presentare i servizi dell’azienda."
-      },
       {
         "type": "p",
         "text": "La decisione non riguarda soltanto l’installazione. Riguarda anche le persone che useranno l’impianto e dovranno ritrovare informazioni e documenti nel tempo."
@@ -1088,7 +1080,7 @@ export const editorialNative: Article[] = [
       },
       {
         "type": "p",
-        "text": "[Conosci l’offerta di servizi Innovasol](https://innovasol.it/ \"sponsored\")"
+        "text": "[Richiedi informazioni a Innovasol](https://innovasol.it/contatti/ \"sponsored\")"
       },
       {
         "type": "h2",
@@ -1109,7 +1101,7 @@ export const editorialNative: Article[] = [
   {
     "slug": "green-energy-group-preparare-una-decisione-energetica-condivisa-in-azienda",
     "title": "Green Energy Group: preparare una decisione energetica condivisa in azienda",
-    "excerpt": "Contenuto sponsorizzato · Green Energy Group. Referenti, dati e scenari: una scheda per discutere il progetto fotovoltaico con Green Energy Group prima della decisione d’investimento.",
+    "excerpt": "Referenti, dati e scenari: una scheda per discutere il progetto fotovoltaico con Green Energy Group prima della decisione d’investimento.",
     "format": "news",
     "category": "sostenibilita",
     "tags": [
@@ -1143,10 +1135,6 @@ export const editorialNative: Article[] = [
       }
     ],
     "content": [
-      {
-        "type": "p",
-        "text": "**Contenuto sponsorizzato · Green Energy Group**. Articolo pubblicitario realizzato per presentare i servizi dell’azienda."
-      },
       {
         "type": "p",
         "text": "Chi approva l’investimento e chi usa l’immobile devono poter leggere la stessa proposta. Una scheda condivisa aiuta a portare il progetto nella vita dell’impresa."
@@ -1250,7 +1238,7 @@ export const editorialNative: Article[] = [
       },
       {
         "type": "p",
-        "text": "[Approfondisci il progetto fotovoltaico con Green Energy Group](https://greenenergygroup.it/fotovoltaico/ \"sponsored\")"
+        "text": "[Richiedi informazioni a Green Energy Group](https://greenenergygroup.it/contatti/ \"sponsored\")"
       }
     ],
     "sponsor": "Green Energy Group",
