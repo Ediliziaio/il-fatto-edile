@@ -1,5 +1,54 @@
 [
   {
+    "title": "Dimora Torino: materiali, finiture e interior design nella ristrutturazione",
+    "description": "Materiali e finiture con Dimora Torino: pavimenti, pareti, porte e arredi da coordinare nel progetto di ristrutturazione e interior design.",
+    "path": "/articolo/dimora-torino-materiali-finiture-interior-design",
+    "section": "native",
+    "slug": "dimora-torino-materiali-finiture-interior-design",
+    "publishedAt": "2026-11-18",
+    "image": "/images/covers/dimora-torino-materiali-finiture-interior-design.jpg",
+    "sponsor": "Dimora Torino",
+    "sourceURLs": [
+      "https://dimoratorino.it/",
+      "https://dimoratorino.it/servizi/",
+      "https://dimoratorino.it/progetti/",
+      "https://dimoratorino.it/contatti/"
+    ],
+    "category": "progetti"
+  },
+  {
+    "title": "Best Infissi: zanzariere, inferriate e tendaggi per le aperture della casa",
+    "description": "Zanzariere, inferriate e tendaggi Best Infissi: come coordinare i complementi con finestre, passaggi e luce della casa.",
+    "path": "/articolo/best-infissi-zanzariere-inferriate-tendaggi",
+    "section": "native",
+    "slug": "best-infissi-zanzariere-inferriate-tendaggi",
+    "publishedAt": "2026-11-18",
+    "image": "/images/covers/best-infissi-zanzariere-inferriate-tendaggi.jpg",
+    "sponsor": "Best Infissi",
+    "sourceURLs": [
+      "https://bestinfissi.it/",
+      "https://bestinfissi.it/chi-siamo/"
+    ],
+    "category": "materiali"
+  },
+  {
+    "title": "Il Bagno Group: mobili bagno, docce, rubinetteria e rivestimenti",
+    "description": "Mobili bagno, docce, rubinetteria e rivestimenti da Il Bagno Group. Prodotti da vedere nei quattro showroom fra Brianza e Comasco.",
+    "path": "/articolo/il-bagno-group-mobili-docce-rubinetteria",
+    "section": "native",
+    "slug": "il-bagno-group-mobili-docce-rubinetteria",
+    "publishedAt": "2026-11-18",
+    "image": "/images/covers/il-bagno-group-mobili-docce-rubinetteria.jpg",
+    "sponsor": "Il Bagno Group",
+    "sourceURLs": [
+      "https://www.ilbagnogroup.com/",
+      "https://www.ilbagnogroup.com/arredobagno/",
+      "https://www.ilbagnogroup.com/showroom/",
+      "https://www.ilbagnogroup.com/contatti/"
+    ],
+    "category": "materiali"
+  },
+  {
     "title": "Disegni aggiornati in cantiere: distribuire le revisioni e ritirare le copie superate",
     "description": "Registro destinatari, conferme di ricezione e ritiro delle stampe superate: un metodo per distribuire gli elaborati aggiornati alle squadre in cantiere.",
     "path": "/articolo/revisioni-disegni-cantiere-elaborati-aggiornati",
