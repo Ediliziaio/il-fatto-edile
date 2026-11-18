@@ -23,9 +23,22 @@ export const byCategory = (cat: CategorySlug) => ARTICLES.filter((a) => a.catego
 
 export const byFormat = (format: Article['format']) => ARTICLES.filter((a) => a.format === format);
 
-export const relatedArticles = (article: Article, n = 4) =>
-  ARTICLES.filter((a) => a.slug !== article.slug && (a.category === article.category || a.format === article.format))
-    .slice(0, n);
+export function relatedArticles(article: Article, n = 4): Article[] {
+  const generic = new Set(['edilizia', 'costruzioni', 'cantiere', 'news', '2025', '2026']);
+  const normalize = (tag: string) => tag.trim().toLocaleLowerCase('it');
+  const tags = new Set(article.tags.map(normalize).filter((tag) => !generic.has(tag)));
+  const references = new Set(article.content.filter((block) => block.type === 'readalso').map((block) => block.slug));
+  return ARTICLES.filter((candidate) => candidate.slug !== article.slug)
+    .map((candidate, index) => {
+      const overlap = new Set(candidate.tags.map(normalize).filter((tag) => tags.has(tag))).size;
+      const score = overlap * 8 + (candidate.category === article.category ? 4 : 0) + (references.has(candidate.slug) ? 16 : 0);
+      return { candidate, index, score };
+    })
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score || a.index - b.index)
+    .slice(0, n)
+    .map(({ candidate }) => candidate);
+}
 
 export const categoryLabel = (slug: CategorySlug) =>
   CATEGORIES.find((c) => c.slug === slug)?.label ?? slug;
